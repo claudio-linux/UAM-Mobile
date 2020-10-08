@@ -1,27 +1,43 @@
-#container {
-  text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.daily-scenary-picture{
+  max-height: 10em;
+  width: 100%;
+  object-fit: cover;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.daily-scenary-avatar{
+  width: 40px;
+  height: 40px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+.daily-scenary-avatar + .daily-scenary-avatar{
+  margin-left: 7px;
+}
 
-  color: #8c8c8c;
-
+.city-card{
   margin: 0;
 }
 
-#container a {
-  text-decoration: none;
+.city-card img{
+  height: 8em;
+  object-fit: cover;
+  margin-bottom: -3px;
+}
+
+.city-card h3{
+  font-size: 1em;
+  position: absolute;
+  bottom: 1em;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.2em;
+  border-radius: 0px 0.35em 0.35em 0px;
+}
+
+.master-section{
+  ion-avatar{
+      width: 50px;
+      height: 50px;
+  }
 }
