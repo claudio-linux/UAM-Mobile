@@ -1,21 +1,21 @@
 <ion-header>
   <ion-toolbar color="tertiary">
-    <ion-buttons slot="start">
-      <ion-button>
-        <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+    <ion-buttons slot="end">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
       </ion-button>
     </ion-buttons>
     <ion-title>Minhas reservas</ion-title>
-    <ion-buttons slot="end">
+    <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-menu contentId="menu-content" side="end" type="overlay">
+<ion-menu contentId="menu-content" side="start" type="overlay">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu</ion-title>
+      <ion-title>Felipe</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content>
@@ -39,55 +39,30 @@
 <ion-content class="ion-padding">
   <ion-router-outlet id="menu-content"></ion-router-outlet>
 
-  <ion-row class="ion-align-items-center">
-    <ion-col>
-      <ion-avatar class="profile-pic">
-        <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="">
-      </ion-avatar>
+  <i-row class="ion-justify-content-center">
+    <ion-col size="auto">
+      <ion-button (click)="onClick()">
+        Ativos
+      </ion-button>
     </ion-col>
-    <ion-col class="ion-text-center">
-      <h2 class="ion-no-margin"><strong>2</strong></h2>
-      <p class="ion-no-margin">Baladas</p>
+    <ion-col size="auto">
+      <ion-button (click)="onClick()">
+        Eventos anteriores
+      </ion-button>
     </ion-col>
-    <ion-col class="ion-text-center">
-      <h2 class="ion-no-margin"><strong>3</strong></h2>
-      <p class="ion-no-margin">Casamentos</p>
+    <ion-col size="auto">
+      <ion-button (click)="onClick()">
+        Rascunho
+      </ion-button>
     </ion-col>
-    <ion-col class="ion-text-center">
-      <h2 class="ion-no-margin"><strong>6</strong></h2>
-      <p class="ion-no-margin">Casuais</p>
-    </ion-col>
-    <ion-col class="ion-text-center">
-      <h2 class="ion-no-margin"><strong>10</strong></h2>
-      <p class="ion-no-margin">Jogos</p>
-    </ion-col>
-  </ion-row>
-
-  <h3><strong>Felipe Denani</strong></h3><br>
-
-  Reserva atual
-  <ion-row>
-    <ion-col size="6">
-      <img src="https://ogimg.infoglobo.com.br/in/24414537-563-49e/FT1086A/652/festa.PNG">
-    </ion-col>
-    <ion-col>
-      Festa: COVID-19<br> 
-      Local: Av. Paulista 666, São Paulo<br>
-      Horário: 03h00
-    </ion-col>
-  </ion-row>  
-
-
-  Reservas passadas
-  <ion-row>
-    <ion-col size="3" *ngFor="let i of [0,1,2,3,4,5,6,7,8,9,10,11,12]">
-      <img [src]="'https://picsum.photos/id/'+(600 + 2*i)+'/150'" alt="">
-    </ion-col>
-  </ion-row>
-
-  <ion-row>
-    aaaaaaaaaaa
-  </ion-row>
-
+  </i-row>
 </ion-content>
 
+
+<i-toolbar>
+  <ion-buttons slot="end">
+    <ion-button (click)="onClick()">
+      <ion-icon slot="icon-only" name="add"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</i-toolbar>
