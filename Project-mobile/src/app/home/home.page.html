@@ -1,65 +1,50 @@
 <ion-header>
-  <ion-toolbar color="tertiary">
-    <ion-buttons slot="start">
-      <ion-button>
-        <ion-icon slot="icon-only" name="person-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title>Minhas reservas</ion-title>
-    <ion-buttons slot="end">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Quiz
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
+<ion-content>
+  <ion-card *ngIf="!showResult">
+    <ion-card-header>
+      <ion-card-title>{{questions[currentQuestion].text}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-radio-group [(ngModel)]="questions[currentQuestion].checkedAlternative">
+          <ion-item *ngFor="let alternative of questions[currentQuestion].alternatives; let i = index">
+            <ion-radio slot="start" [value]="i"></ion-radio>
+            <ion-label>{{alternative}}</ion-label>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
 
+      <ion-button (click)="next()" expand="block" [disabled]="questions[currentQuestion].checkedAlternative == null">
+        <ion-icon slot="end" name="chevron-forward"></ion-icon>
+        Próxima pergunta
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
 
-<ion-content class="ion-padding">
-  <ion-router-outlet id="menu-content"></ion-router-outlet>
-  <ion-row class="ion-align-items-center">
-    <ion-col>
-      <ion-avatar class="profile-pic">
-        <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="">
-      </ion-avatar>
-    </ion-col>
-    <ion-col class="ion-text-center">
-      <h2 class="ion-no-margin"><strong>2</strong></h2>
-      <p class="ion-no-margin">Baladas</p>
-    </ion-col>
-    <ion-col class="ion-text-center">
-      <h2 class="ion-no-margin"><strong>3</strong></h2>
-      <p class="ion-no-margin">Casamentos</p>
-    </ion-col>
-    <ion-col class="ion-text-center">
-      <h2 class="ion-no-margin"><strong>6</strong></h2>
-      <p class="ion-no-margin">Casuais</p>
-    </ion-col>
-    <ion-col class="ion-text-center">
-      <h2 class="ion-no-margin"><strong>10</strong></h2>
-      <p class="ion-no-margin">Jogos</p>
-    </ion-col>
-  </ion-row>
+  <ion-card *ngIf="showResult" color="primary">
+    <img [src]="possibleResults[mostAnswered].image" class="tv-show-image">
+    <ion-card-content>
+      <h2>
+        A maioria das suas respostas foi
+        {{possibleResults[mostAnswered].letter}}
+      </h2>
+      <h3>
+        Portanto, o seu filme é
+        {{possibleResults[mostAnswered].tvShow}}
+      </h3>
 
-  <h3><strong>Felipe Denani</strong></h3><br>
-
-  Reserva atual
-  <ion-row>
-    <ion-col size="6">
-      <img src="https://ogimg.infoglobo.com.br/in/24414537-563-49e/FT1086A/652/festa.PNG">
-    </ion-col>
-    <ion-col>
-      Festa: COVID-19<br> 
-      Local: Av. Paulista 666, São Paulo<br>
-      Horário: 03h00
-    </ion-col>
-  </ion-row>  
-
-
-  Reservas passadas
-  <ion-row>
-    <ion-col size="3" *ngFor="let i of [0,1,2,3,4,5,6,7,8,9,10,11,12]">
-      <img [src]="'https://picsum.photos/id/'+(600 + 2*i)+'/150'" alt="">
-    </ion-col>
-  </ion-row>
+      <ion-button (click)="confirmReset()" color="light" expand="block" class="ion-margin-top">
+        <ion-icon slot="start" name="refresh"></ion-icon>
+        Jogar de novo
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
 
