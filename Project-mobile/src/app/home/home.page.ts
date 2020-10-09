@@ -11,5 +11,18 @@ export class HomePage implements OnInit {
 
   ngOnInit() {
   }
+aaaaaaaaa
+  public perguntaAtual = 0;
+  public perguntas = [
+    {
+    text: 'Qual jogo melhor?',
+    options: ['RPG', 'FPS']
+    },    
+    {
+    text: 'Qual ADC melhor?',
+    options: ['MF', 'Jinx']
+    }
+  ]
+
 
 }
