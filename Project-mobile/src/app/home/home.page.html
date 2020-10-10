@@ -37,32 +37,18 @@
 </ion-menu>
 
 <ion-content class="ion-padding">
-  <ion-router-outlet id="menu-content"></ion-router-outlet>
+  <ion-button value="4" href="#" onClick="mostrar('exemplo1')">
+    Reservas Anteriores
+  </ion-button>
+  <ion-button value="12" href="#" onClick="mostrar('exemplo2')">
+    Atuais
+  </ion-button>
 
-  <i-row class="ion-justify-content-center">
-    <ion-col size="auto">
-      <ion-button (click)="onClick()">
-        Ativos
-      </ion-button>
-    </ion-col>
-    <ion-col size="auto">
-      <ion-button (click)="onClick()">
-        Eventos anteriores
-      </ion-button>
-    </ion-col>
-    <ion-col size="auto">
-      <ion-button (click)="onClick()">
-        Rascunho
-      </ion-button>
-    </ion-col>
-  </i-row>
+
 </ion-content>
 
+<ion-content>
+  <img class="hidden" id="exemplo1" src="https://i.ytimg.com/vi/VMw4cwzkxwI/maxresdefault.jpg">
+  <img class="hidden" id="exemplo2" src="https://cdn1.dotesports.com/wp-content/uploads/sites/3/2018/08/09114843/20ca85e8-2323-48c3-89ae-d6887b808d10.jpg">
 
-<i-toolbar>
-  <ion-buttons slot="end">
-    <ion-button (click)="onClick()">
-      <ion-icon slot="icon-only" name="add"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-</i-toolbar>
+</ion-content>

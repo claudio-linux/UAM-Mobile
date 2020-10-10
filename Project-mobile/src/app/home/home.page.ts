@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
 })
-export class HomePage implements OnInit {
+export class HomePage {
 
-  constructor() { }
+  public gridSize = 4;
 
-  ngOnInit() {
+  public mostrar(id) {
+    if (document.getElementById(id).style.display == 'block') {
+      document.getElementById(id).style.display = 'none';
+    }
+    else { document.getElementById(id).style.display = 'block'; 
+    }
   }
 
 }
