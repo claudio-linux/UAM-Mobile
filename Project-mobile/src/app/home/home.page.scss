@@ -41,6 +41,12 @@ ion-card-subtitle {
   text-decoration: none;
 }
 
+
+ion-toolbar {
+  --background: rgb(161,27,164);
+  --background: linear-gradient(90deg, rgba(161,27,164,1) 0%, rgba(79,11,134,1) 100%);
+  --color: #ffffff;
+}
 .notborder{
   box-shadow: none;
   border: none !important;
@@ -48,77 +54,7 @@ ion-card-subtitle {
 }
 
 
-.partiner1 {
-
-  background-image: url("/assets/icon/nighparty.jpg");
-  background-position: center;
-  background-size: cover;
-  }
-
-.partiner1::before{
-
-  opacity: 0;
-}
-
-.partiner2 {
-
-  background-image: url("/assets/icon/friends1.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.partiner3 {
-
-  background-image: url("/assets/icon/familia1.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.partiner4 {
-
-  background-image: url("/assets/icon/married2.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.partiner5 {
-
-  background-image: url("/assets/icon/casual-party1.jpeg");
-  background-position: center;
-  background-size: cover;
-}
-
-.partiner6 {
-
-  background-image: url("/assets/icon/nighparty2.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.partiner7 {
-
-  background-image: url("/assets/icon/casual-party1.jpeg");
-  background-position: center;
-  background-size: cover;
-}
-
-.partiner8 {
-
-  background-image: url("/assets/icon/familia2.jpeg");
-  background-position: center;
-  background-size: cover;
-}
-
-.partiner9 {
-
-  background-image: url("/assets/icon/nighparty-forrozin.jpeg");
-  background-position: center;
-  background-size: cover;
-}
-
-.partiner10 {
-
-  background-image: url("/assets/icon/married2.jpg");
+.partiner{
   background-position: center;
   background-size: cover;
 }
