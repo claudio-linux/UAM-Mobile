@@ -1,20 +1,19 @@
-<ion-header>
-  <ion-toolbar color="tertiary">
-    <ion-buttons slot="end">
-      <ion-button>
-        <ion-avatar class="daily-scenary-avatar">
-          <img class="daily-scenary-picture" src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
-        </ion-avatar>
-      </ion-button>
-    </ion-buttons>
-    <ion-title>
-      Minhas reservas
-    </ion-title>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <ion-header >
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-avatar class="daily-scenary-avatar">
+            <img src="https://instagram.fcgh23-1.fna.fbcdn.net/v/t51.2885-19/s150x150/109017291_3727040503978566_8989078800074627086_n.jpg?_nc_ht=instagram.fcgh23-1.fna.fbcdn.net&amp;_nc_ohc=a4YRkmF3e00AX_bs_mQ&amp;oh=2c6064d2607641201089699de000b06e&amp;oe=5FAD90EA" alt="">
+          </ion-avatar>
+        </ion-button>
+      </ion-buttons>
+        <ion-title size= "auto"> Meu perfil </ion-title>
+        <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
 
 <ion-menu contentId="menu-content" side="start" type="overlay">
   <ion-header>
@@ -41,112 +40,83 @@
 </ion-menu>
 
 
+<img class="daily-scenary-picture" src="https://images.pexels.com/photos/97906/pexels-photo-97906.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
 
 <ion-content class ="ion-padding">
 <ion-router-outlet id="menu-content"></ion-router-outlet>
-<h1>
-  <strong>
-    Hi Mike, <br>
-    Where do you want go?
-  </strong>
-</h1>
 
-<ion-item>
-  <ion-icon name="location-sharp" slot="start"></ion-icon>
-  <ion-input placeholder="Input destination"></ion-input>
-  <ion-icon name="arrow-forward-sharp" slot="end"></ion-icon>
-</ion-item>
-
-<ion-row class="ion-align-items-center ion-margin-top">
-  <ion-col size="auto">
-    <h2 class="ion-no-margin"><strong>Daily Scenery</strong></h2>
+<ion-row>
+  <ion-col>
+    <ion-avatar>
+      <img class= "daily-avatar" src="https://instagram.fcgh23-1.fna.fbcdn.net/v/t51.2885-19/s150x150/109017291_3727040503978566_8989078800074627086_n.jpg?_nc_ht=instagram.fcgh23-1.fna.fbcdn.net&amp;_nc_ohc=a4YRkmF3e00AX_bs_mQ&amp;oh=2c6064d2607641201089699de000b06e&amp;oe=5FAD90EA" alt="">
+    </ion-avatar>
+  </ion-col>
+  <ion-col class="ion-text-start">
+    <ion-text color="medium">
+      <p class="ion-no-margin"><strong>Amigos</strong></p>
+    </ion-text>
   </ion-col>
   <ion-col size="auto">
-    <ion-text color="primary">
-        <p class="ion-no-margin"><small>Update</small></p>
+    <ion-text color="medium">
+      <p class="ion-no-margin"><strong>Festas</strong></p>
     </ion-text>
   </ion-col>
   <ion-col class="ion-text-end">
     <ion-text color="medium">
-      <p class="ion-no-margin">More</p>
+      <p class="ion-no-margin"><strong>Mais</strong></p>
     </ion-text>
   </ion-col>
 </ion-row>
+<ion-col size = "auto">
+  <h2 class="ion-no-margin"><strong>Insira um nome</strong></h2>
+</ion-col>
 
-  <ion-card>
-    <img class="daily-scenary-picture" src="https://images.pexels.com/photos/97906/pexels-photo-97906.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
-    <ion-row class="ion-align-items-center">
-      <ion-col>
-        <ion-card-header>
-          <ion-card-subtitle>10/09/2020</ion-card-subtitle>
-          <ion-card-title>São Paulo, SP</ion-card-title>
-        </ion-card-header>
-      </ion-col>
-      <ion-col size="auto"> 
-        <ion-row>
-          <ion-avatar class="daily-scenary-avatar">
-            <img src="https://randomuser.me/api/portraits/women/57.jpg" alt="">
-          </ion-avatar>
-          <ion-avatar class="daily-scenary-avatar">
-            <img src="https://randomuser.me/api/portraits/women/60.jpg" alt="">
-          </ion-avatar>
-        </ion-row>
-      </ion-col>
-    </ion-row>
-  </ion-card>
+
+<ion-row class="ion-align-items-center ion-margin-center">
+
+</ion-row>
 
 <ion-row class="ion-align-items-center ion-margin-top">
     <ion-col size="auto">
-      <h2 class="ion-no-margin"><strong>City</strong></h2>
+      <h2 class="ion-no-margin"><strong>Fotos</strong></h2>
     </ion-col>
 <ion-badge>
-  Hot
+  Novas
 </ion-badge>
     <ion-col class="ion-text-end">
       <ion-text color="medium">
-        <p class="ion-no-margin">More</p>
+        <p class="ion-no-margin">Álbuns</p>
       </ion-text>
+    </ion-col>
+</ion-row>
+
+  <ion-row>
+    <ion-col>
+      <img src="https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"> 
+    </ion-col>  
+    <ion-col>
+      <img src="https://images.pexels.com/photos/433452/pexels-photo-433452.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+    </ion-col>
+    <ion-col>
+      <img src="https://images.pexels.com/photos/1481276/pexels-photo-1481276.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <img src="https://images.pexels.com/photos/3419648/pexels-photo-3419648.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"> 
+    </ion-col>
+    <ion-col>
+      <img src="https://images.pexels.com/photos/2123606/pexels-photo-2123606.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+    </ion-col>
+    <ion-col>
+      <img src="https://images.pexels.com/photos/3394225/pexels-photo-3394225.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
     </ion-col>
   </ion-row>
 
-<ion-row>
-  <ion-col>
-    <ion-card class="city-card"><img src="https://images.pexels.com/photos/351283/pexels-photo-351283.jpeg?cs=srgb&dl=pexels-florencia-potter-351283.jpg&fm=jpg">
-      <h3>Rio de Janeiro</h3>
-    </ion-card>
-  </ion-col>
-  <ion-col>
-    <ion-card class="city-card"><img src="https://images.pexels.com/photos/4172523/pexels-photo-4172523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
-      <h3>Salvador</h3>
-    </ion-card>
-  </ion-col>
-  <ion-col>
-    <ion-card class="city-card"><img src="https://images.pexels.com/photos/1058314/pexels-photo-1058314.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
-      <h3>Curitiba</h3>
-    </ion-card>
+  <ion-row class="ion-align-items-center ion-margin-top">
+    <ion-col size="auto">
+      <h2 class="ion-no-margin"><strong>Feed</strong></h2>
+    </ion-col>
+  </ion-row>
 
-  </ion-col>
-</ion-row>
-
-<h2><strong>Master</strong></h2>
-
-<ion-row class="master-section ion-align-items-center">
-  <ion-col size="auto">
-    <ion-avatar><img src="https://randomuser.me/api/portraits/women/12.jpg" alt=""></ion-avatar>
-  </ion-col>
-  <ion-col size="auto">
-    <ion-avatar><img src="https://randomuser.me/api/portraits/women/13.jpg" alt=""></ion-avatar>
-  </ion-col>
-  <ion-col size="auto">
-    <ion-avatar><img src="https://randomuser.me/api/portraits/women/14.jpg" alt=""></ion-avatar>
-  </ion-col>
-  <ion-col size="auto">
-    <ion-avatar><img src="https://randomuser.me/api/portraits/women/68.jpg" alt=""></ion-avatar>
-  </ion-col>
-  <ion-col>
-    <ion-text color="primary">
-      Join them.
-    </ion-text>
-  </ion-col>
-</ion-row>
 </ion-content>
