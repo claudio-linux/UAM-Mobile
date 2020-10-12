@@ -1,8 +1,14 @@
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>
-      Seu evento  
-    </ion-title>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="end">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Seu evento</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
