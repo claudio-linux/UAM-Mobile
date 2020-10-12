@@ -7,14 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  public gridSize = 4;
-
-  public mostrar(id) {
-    if (document.getElementById(id).style.display == 'block') {
-      document.getElementById(id).style.display = 'none';
-    }
-    else { document.getElementById(id).style.display = 'block'; 
-    }
-  }
-
+  public selecionado = 'exemplo1'; // coloque aqui o default ;)
+  
 }
