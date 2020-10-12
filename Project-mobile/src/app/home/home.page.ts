@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController, ToastController } from '@ionic/angular';
+import React from 'react';
+import { IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonRouterOutlet } from '@ionic/react';
+
 
 @Component({
   selector: 'app-home',
@@ -15,5 +18,4 @@ public contribuicoes=[
 ]
 
 constructor(){}
-
 }
