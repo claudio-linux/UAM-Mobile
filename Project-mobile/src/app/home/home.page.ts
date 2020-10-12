@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { AlertController, ToastController } from '@ionic/angular';
-import React from 'react';
+import {React} from '@ionic/react';
 import { IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonRouterOutlet } from '@ionic/react';
 
 @Component({
@@ -10,11 +10,24 @@ import { IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem,
 })
 export class HomePage {
 
-public contribuicoes=[
-  {id: 1, name: 'Cerveja', preco:50},
-  {id: 2, name: 'Churrasco', preco:100},
-  {id: 3, name: 'Doce', preco:20}
-]
+@Input() text: string;
 
 constructor(){}
+
+
+public itens = [
+  { name: 'Cerveja'},
+  { name: 'Churrasco'},
+];
+
+public newItem = '';
+
+public addToList() {
+  this.itens.push({
+    name: this.newItem,
+  });
+  this.newItem = '';
+}
+
+
 }

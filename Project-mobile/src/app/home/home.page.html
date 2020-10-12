@@ -49,24 +49,27 @@
   </ion-row>
 
 
-  <ion-list class="ion-padding">
-    Sua contribuição<br>
-    <ion-item *ngFor="let c of contribuicoes" routerLink="">
-      <ion-label>
-        <h2>
-          {{c.name}}
-        </h2>
-        <p>
-          {{c.preco | currency: 'BRL'}}
-        </p>
-      </ion-label>
+  <ion-toolbar color="light" class="ion-margin-bottom">
+    <ion-item color="light">
+      <ion-label position="floating">Nova contribuição</ion-label>
+      <ion-input [(ngModel)]="newTask"></ion-input>
+    </ion-item>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="addToList()">
+        <ion-icon name="add" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-list>
+    <ion-item *ngFor="let item of itens">
+      <ion-checkbox slot="start" [(ngModel)]="item.completed"></ion-checkbox>
+      <ion-label>{{item.name}}</ion-label>
     </ion-item>
   </ion-list>
 
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button routerLink="/home">
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+
+
 
 </ion-content>
