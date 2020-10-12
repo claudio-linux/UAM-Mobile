@@ -1,10 +1,43 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title  size="large">Criar Festa</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <ion-header >
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-button>
+        </ion-button>
+      </ion-buttons>
+        <ion-title size= "auto"> Criar Festa </ion-title>
+        <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-menu contentId="menu-content" side="start" type="overlay">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-icon slot="start" name="timer-outline"></ion-icon>
+        <ion-label>Arquivar</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="timer-outline"></ion-icon>
+        <ion-label>Arquivar</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="timer-outline"></ion-icon>
+        <ion-label>Arquivar</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
 
 <ion-content>
+<ion-router-outlet id="menu-content"></ion-router-outlet>  
 <div>
 <ion-item>
   <ion-label position="floating">Título do evento</ion-label>
@@ -76,4 +109,4 @@
 </ion-item>
 </div>
 
-</ion-content>
+ </ion-content>
