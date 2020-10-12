@@ -4,7 +4,7 @@
       <ion-button>
       </ion-button>
     </ion-buttons>
-    <ion-title>Minhas reservas</ion-title>
+    <ion-title>Evento ativo</ion-title>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -35,27 +35,20 @@
   </ion-content>
 </ion-menu>
 
-
-  <ion-toolbar>
-    <ion-title>Reserva atual</ion-title>
-  </ion-toolbar>
-
+<ion-content class="ion-padding">
+  <ion-router-outlet id="menu-content"></ion-router-outlet>
   <ion-row class="ion-padding">
     <ion-col size="6">
       <img src="https://ogimg.infoglobo.com.br/in/24414537-563-49e/FT1086A/652/festa.PNG">
     </ion-col>
     <ion-col>
-      Festa: COVID-19<br> 
+      Festa: COVID-19<br>
       Local: Av. Paulista 666, São Paulo<br>
       Horário: 03h00
     </ion-col>
   </ion-row>
 
 
-
-
-
-<ion-content>
   <ion-list class="ion-padding">
     Sua contribuição<br>
     <ion-item *ngFor="let c of contribuicoes" routerLink="">
@@ -75,5 +68,5 @@
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
-</ion-content>
 
+</ion-content>
