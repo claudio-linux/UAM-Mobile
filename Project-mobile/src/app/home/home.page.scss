@@ -1,3 +1,16 @@
+ion-card {
+  --background: #ffffff00 !important;
+  --color: #ffffff !important;
+}
+
+ion-card-title {
+  --color: #ffffff;
+}
+
+ion-card-subtitle {
+  --color: #ffffff;
+}
+
 #container {
   text-align: center;
 
@@ -24,4 +37,66 @@
 
 #container a {
   text-decoration: none;
+}
+
+
+ion-toolbar {
+  --background: rgb(161,27,164);
+  --background: linear-gradient(90deg, rgba(161,27,164,1) 0%, rgba(79,11,134,1) 100%);
+  --color: #ffffff;
+}
+.notborder{
+  box-shadow: none;
+  border: none !important;
+  background-color: rgba($color: #42404015, $alpha: 0.5);
+}
+
+
+.partiner{
+  background-position: center;
+  background-size: cover;
+}
+
+
+.daily-scenary-picture{
+  max-height: 10em;
+  width: 100%;
+  object-fit: cover;
+}
+
+.daily-scenary-avatar{
+  width: 40px;
+  height: 40px;
+}
+
+.daily-scenary-avatar + .daily-scenary-avatar{
+  margin-left: 7px;
+}
+
+.city-card{
+  margin: 0;
+}
+
+.city-card img{
+  height: 8em;
+  object-fit: cover;
+  margin-bottom: -3px;
+}
+
+.city-card h3{
+  font-size: 1em;
+  position: absolute;
+  bottom: 1em;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.2em;
+  border-radius: 0px 0.35em 0.35em 0px;
+}
+
+.master-section{
+  ion-avatar{
+      width: 50px;
+      height: 50px;
+  }
 }
