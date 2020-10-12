@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+  },
+  {
+    path: 'criar-festa',
+    loadChildren: () => import('./criar-festa/criar-festa.module').then( m => m.CriarFestaPageModule)
   }
 ];
 
