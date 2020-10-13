@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'lista-de-amigos',
     loadChildren: () => import('./lista-de-amigos/lista-de-amigos.module').then( m => m.ListaDeAmigosPageModule)
+  },
+  {
+    path: 'pagamento',
+    loadChildren: () => import('./pagamento/pagamento.module').then( m => m.PagamentoPageModule)
   }
 ];
 
