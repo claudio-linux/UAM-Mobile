@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'parceiros',
     loadChildren: () => import('./parceiros/parceiros.module').then( m => m.ParceirosPageModule)
+  },
+  {
+    path: 'lista-de-amigos',
+    loadChildren: () => import('./lista-de-amigos/lista-de-amigos.module').then( m => m.ListaDeAmigosPageModule)
   }
 ];
 
