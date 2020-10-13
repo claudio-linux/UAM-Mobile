@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-evento-ativo',
@@ -6,10 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./evento-ativo.page.scss'],
 })
 export class EventoAtivoPage implements OnInit {
-
+  
+  @Input() text: string;
   constructor() { }
 
   ngOnInit() {
   }
-
+  public itens = [
+    { name: 'Cerveja'},
+    { name: 'Churrasco'},
+  ];
+  
+  public newItem = '';
+  
+  public addToList() {
+    this.itens.push({
+      name: this.newItem,
+    });
+    this.newItem = '';
+  }
 }
