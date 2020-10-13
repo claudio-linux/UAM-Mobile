@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'evento-ativo',
     loadChildren: () => import('./evento-ativo/evento-ativo.module').then( m => m.EventoAtivoPageModule)
+  },
+  {
+    path: 'parceiros',
+    loadChildren: () => import('./parceiros/parceiros.module').then( m => m.ParceirosPageModule)
   }
 ];
 
