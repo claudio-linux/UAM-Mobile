@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'modalone',
+    loadChildren: () => import('./modalone/modalone.module').then( m => m.ModalonePageModule)
   },
+
 ];
 
 @NgModule({
