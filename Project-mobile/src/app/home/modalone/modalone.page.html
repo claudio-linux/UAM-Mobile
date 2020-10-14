@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cartão de Crédito</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-item>
+  <ion-label>Número do Cartão</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>Nome do Titular</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>Data de Validade</ion-label>
+  <ion-datetime displayFormat="MM YY" placeholder="Select Date"></ion-datetime>
+</ion-item>
+<ion-item>
+  <ion-label>Código de Segurança</ion-label>
+  <ion-input type="number" value=""></ion-input>
+</ion-item>
+
+<ion-content>
+  <ion-button (click)="close()">Fechar</ion-button>
+</ion-content>
