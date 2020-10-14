@@ -24,17 +24,25 @@
   <ion-content>
     <ion-list>
       <ion-item>
-        <ion-icon slot="start" name="timer-outline"></ion-icon>
-        <ion-label>Minhas Festas</ion-label>
+        <ion-icon slot="start" name="calendar"></ion-icon>
+        <ion-router-link href="/home/meus-eventos" class="color">Meus eventos</ion-router-link>
       </ion-item>
       <ion-item>
-        <ion-icon slot="start" name="timer-outline"></ion-icon>
-        <ion-label>Lista de Amigos</ion-label>
+        <ion-icon slot="start" name="add-circle"></ion-icon>
+        <ion-router-link href="/home/criar-festa" class="color">Criar Festa</ion-router-link>
       </ion-item>
       <ion-item>
-        <ion-icon slot="start" name="timer-outline"></ion-icon>
-        <ion-label>Configurações</ion-label>
+        <ion-icon slot="start" name="people-circle"></ion-icon>
+        <ion-router-link href="/home/parceiros" class="color">Parceiros</ion-router-link>
       </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="person-circle"></ion-icon>
+        <ion-router-link href="/home/meu-perfil" class="color">Meu Perfil</ion-router-link>
+      </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="receipt"></ion-icon>
+        <ion-router-link href="/home/lista-de-amigos" class="color">Lista de amigos</ion-router-link>
+      </ion-item>    
     </ion-list>
   </ion-content>
 </ion-menu>
