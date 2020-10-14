@@ -1,19 +1,20 @@
-<ion-content>
-  <ion-header >
-    <ion-toolbar>
-      <ion-buttons slot="end">
-        <ion-button>
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-router-link href="/home/meu-perfil" class="color">
           <ion-avatar class="daily-scenary-avatar">
-            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
+            <img class="daily-scenary-picture" src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
           </ion-avatar>
-        </ion-button>
-      </ion-buttons>
-        <ion-title size= "auto"> Meu perfil </ion-title>
-        <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-    </ion-toolbar>
-  </ion-header>
+        </ion-router-link>
+      </ion-button>
+    </ion-buttons>
+      <ion-title size= "auto"> Meu perfil </ion-title>
+      <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
   <ion-menu contentId="menu-content" side="start" type="overlay">
     <ion-header>
@@ -42,6 +43,10 @@
         <ion-item>
           <ion-icon slot="start" name="receipt"></ion-icon>
           <ion-router-link href="/home/lista-de-amigos" class="color">Lista de amigos</ion-router-link>
+        </ion-item>    
+        <ion-item>
+          <ion-icon slot="start" name="log-out-outline"></ion-icon>
+          <ion-router-link href="/login" class="color">Logout</ion-router-link>
         </ion-item>    
       </ion-list>
     </ion-content>
@@ -115,7 +120,7 @@
 
   <ion-row class="ion-align-items-center ion-margin-top">
     <ion-col size="auto">
-      <h2 class="ion-no-margin"><strong>Feed</strong></h2>
+      <h2 class="ion-no-margin"><strong>Publicações </strong></h2>
     </ion-col>
   </ion-row>
 

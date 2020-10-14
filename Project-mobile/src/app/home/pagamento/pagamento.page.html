@@ -3,9 +3,11 @@
       <ion-toolbar>
         <ion-buttons slot="end">
           <ion-button>
-            <ion-avatar class="daily-scenary-avatar">
-              <img class="daily-scenary-picture" src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
-            </ion-avatar>
+            <ion-router-link href="/home/meu-perfil" class="color">
+              <ion-avatar class="daily-scenary-avatar">
+                <img class="daily-scenary-picture" src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
+              </ion-avatar>
+            </ion-router-link>
           </ion-button>
         </ion-buttons>
         <ion-title size="large"> Pagamentos </ion-title>
@@ -43,6 +45,10 @@
             <ion-icon slot="start" name="receipt"></ion-icon>
             <ion-router-link href="/home/lista-de-amigos" class="color">Lista de amigos</ion-router-link>
           </ion-item>    
+          <ion-item>
+            <ion-icon slot="start" name="log-out-outline"></ion-icon>
+            <ion-router-link href="/login" class="color">Logout</ion-router-link>
+          </ion-item>    
         </ion-list>
       </ion-content>
     </ion-menu>
@@ -54,7 +60,7 @@
 <ion-router-outlet id="menu-content"></ion-router-outlet>
 <h1>
   <strong>
-    LucasPalooza
+    COVID-19
   </strong>
 </h1>
   <ion-button expand="block" (click)="showModalOne()">Cartão de Crédito</ion-button>
