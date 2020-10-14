@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="tertiary">
+  <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button>
       </ion-button>
@@ -20,20 +20,33 @@
   <ion-content>
     <ion-list>
       <ion-item>
-        <ion-icon slot="start" name="timer-outline"></ion-icon>
-        <ion-label>Arquivar</ion-label>
+        <ion-icon slot="start" name="home"></ion-icon>
+        <ion-router-link href="/home" class="color">Home</ion-router-link>
       </ion-item>
       <ion-item>
-        <ion-icon slot="start" name="timer-outline"></ion-icon>
-        <ion-label>Arquivar</ion-label>
+        <ion-icon slot="start" name="calendar"></ion-icon>
+        <ion-router-link href="/home/meus-eventos" class="color">Meus eventos</ion-router-link>
       </ion-item>
       <ion-item>
-        <ion-icon slot="start" name="timer-outline"></ion-icon>
-        <ion-label>Arquivar</ion-label>
+        <ion-icon slot="start" name="add-circle"></ion-icon>
+        <ion-router-link href="/home/criar-festa" class="color">Criar Festa</ion-router-link>
       </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="people-circle"></ion-icon>
+        <ion-router-link href="/home/parceiros" class="color">Parceiros</ion-router-link>
+      </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="person-circle"></ion-icon>
+        <ion-router-link href="/home/meu-perfil" class="color">Meu Perfil</ion-router-link>
+      </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="receipt"></ion-icon>
+        <ion-router-link href="/home/lista-de-amigos" class="color">Lista de amigos</ion-router-link>
+      </ion-item>    
     </ion-list>
   </ion-content>
 </ion-menu>
+
 
 <ion-content class="ion-padding">
   <ion-router-outlet id="menu-content"></ion-router-outlet>
@@ -47,6 +60,13 @@
       Horário: 03h00
     </ion-col>
   </ion-row>
+
+    <p class="center">
+      <ion-button (click)="presentToast()" routerLink="/home/pagamento" routerDirection="root">
+          Contribuir com dinheiro
+        <ion-icon slot="icon-only" name="wallet"></ion-icon>
+      </ion-button>
+    </p>
 
 
   <ion-toolbar color="light" class="ion-margin-bottom">

@@ -34,6 +34,14 @@ const routes: Routes = [
   {
     path: 'pagamento',
     loadChildren: () => import('./pagamento/pagamento.module').then( m => m.PagamentoPageModule)
+  },
+  {
+    path: 'modalone',
+    loadChildren: () => import('./modalone/modalone.module').then( m => m.ModalonePageModule)
+  },
+  {
+    path: 'modaltwo',
+    loadChildren: () => import('./modaltwo/modaltwo.module').then( m => m.ModaltwoPageModule)
   }
 ];
 

@@ -1,14 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { ModalonePage } from '../modalone/modalone.page';
-import { ModaltwoPage } from '../modaltwo/modaltwo.page';
+import { ModaltwoComponent } from '../modaltwo/modaltwo.component';
 
 @Component({
-  selector: 'app-pagamento',
-  templateUrl: './pagamento.page.html',
-  styleUrls: ['./pagamento.page.scss'],
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss'],
 })
-export class PagamentoPage implements OnInit {
+export class HomePage {
 
   public gridSize = 4;
 
@@ -35,13 +35,10 @@ export class PagamentoPage implements OnInit {
 
   async showModalTwo() {
     const modal = await this.modalCtrl.create({
-      component: ModaltwoPage
+      component: ModaltwoComponent
     });
 
     modal.present();
-  }
-
-  ngOnInit() {
   }
 
 }
