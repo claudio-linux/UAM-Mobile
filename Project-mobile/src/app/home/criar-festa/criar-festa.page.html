@@ -120,7 +120,7 @@
  </ion-content>
  <ion-content>
 <p class="center">
-  <ion-button routerLink="/home" routerDirection="root">
+  <ion-button (click)="presentToast()" routerLink="/home/meus-eventos" routerDirection="root">
     Criar
     <ion-icon slot="icon-only" name="checkmark"></ion-icon>
   </ion-button>
