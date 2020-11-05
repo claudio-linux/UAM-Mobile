@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Detalhes
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-component style="height: 100%">
+  <ion-card>
+    <ion-card-content>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="auto" class="ion-margin-end">
+          <ion-avatar><img [src]="'https://github.com/'+amigo.username+'.png'" alt=""></ion-avatar>
+        </ion-col>
+        <ion-col>
+          <h1>{{amigo.name}}</h1>
+          <h2>{{amigo.username}}</h2>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-list class="ion-no-padding">
+          <ion-item>
+            <ion-label>
+              <strong>E-mail: </strong> {{amigo.email}}
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <strong>Telefone: </strong> {{amigo.phone}}
+            </ion-label>
+          </ion-item>
+          <ion-button (click)="close()" expand="block" [routerLink]="['/home/lista-de-amigos/edit/', amigo.username]">
+            <ion-icon slot="start" name="create"></ion-icon>
+            Editar
+          </ion-button>
+        </ion-list>
+      </ion-row>
+
+    </ion-card-content>
+  </ion-card>
+</ion-component>

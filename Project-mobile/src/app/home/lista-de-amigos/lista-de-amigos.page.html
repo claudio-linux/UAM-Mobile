@@ -59,53 +59,23 @@
 <ion-content class="ion-padding">
   <ion-router-outlet id="menu-content"></ion-router-outlet>
 <ion-content>
+  <ion-content>
+    <ion-list>
+      <ion-item *ngFor="let a of amigos" button (click)="showDetails(a)">
+        <ion-avatar slot="start">
+          <img [src]="'https://github.com/'+a.username+'.png'" alt="">
+        </ion-avatar>
+        <ion-label>
+          <h2>{{a.name}}</h2>
+          <p>{{a.email}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
 
-
-<ion-list>
-
-  
-  <ion-item>
-    <ion-label>Claudio Uam</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>Marcela Box Trade</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>Necropsycho</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>Marambá</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>Cinder</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>Audioacoustique</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>Toadstool</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>Trypo</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>NN</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>Aquele amigo</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>O outro</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>lUDO</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>bABY</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>nn 2</ion-label>
-  </ion-item>
-</ion-list>
-
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button routerLink="/home/lista-de-amigos/create">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ion-content>
 </ion-content>

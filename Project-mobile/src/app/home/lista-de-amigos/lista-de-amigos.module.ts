@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ListaDeAmigosPageRoutingModule } from './lista-de-amigos-routing.module';
 
 import { ListaDeAmigosPage } from './lista-de-amigos.page';
+import { AmigoDetailsComponent } from './amigo-details/amigo-details.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { ListaDeAmigosPage } from './lista-de-amigos.page';
     IonicModule,
     ListaDeAmigosPageRoutingModule
   ],
-  declarations: [ListaDeAmigosPage]
+  declarations: [ListaDeAmigosPage, AmigoDetailsComponent]
 })
 export class ListaDeAmigosPageModule {}
