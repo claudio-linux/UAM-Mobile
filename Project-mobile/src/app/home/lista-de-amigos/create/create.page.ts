@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Amigo } from '../lista-de-amigos.page';
+import { NavController } from '@ionic/angular';
+import { Amigo, AmigosService  } from '../../../services/amigos.service';
 
 @Component({
   selector: 'app-create',
@@ -8,20 +9,24 @@ import { Amigo } from '../lista-de-amigos.page';
 })
 export class CreatePage implements OnInit {
 
-  public emptyAmigo: Amigo = {
+  public emptyContact: Amigo = {
     name: '',
     email: '',
     phone: '',
     username: ''
   }
 
-  constructor() { }
+  constructor(
+    private amigosService: AmigosService,
+    private navCtrl: NavController
+  ) { }
 
   ngOnInit() {
   }
 
-  public handleSave(){
-    console.log(this.emptyAmigo);
+  public handleSave() {
+    this.amigosService.create(this.emptyContact);
+    this.navCtrl.back();
   }
 
 }

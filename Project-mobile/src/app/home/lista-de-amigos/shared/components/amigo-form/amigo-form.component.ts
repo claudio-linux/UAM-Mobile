@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Amigo } from '../../../lista-de-amigos.page';
+import { CreatePage } from '../../../create/create.page';
 
 @Component({
   selector: 'app-amigo-form',
@@ -8,7 +8,7 @@ import { Amigo } from '../../../lista-de-amigos.page';
 })
 export class AmigoFormComponent implements OnInit {
 
-  @Input() amigo: Amigo;
+  @Input() amigo: CreatePage;
   @Output() save = new EventEmitter();
 
   constructor() { }
