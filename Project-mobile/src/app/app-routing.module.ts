@@ -10,7 +10,15 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'criar',
+    loadChildren: () => import('./criar/criar.module').then( m => m.CriarPageModule)
   },
+  {
+    path: 'editar',
+    loadChildren: () => import('./editar/editar.module').then( m => m.EditarPageModule)
+  },
+
 ];
 
 @NgModule({
