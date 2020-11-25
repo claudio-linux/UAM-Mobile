@@ -1,18 +1,20 @@
-<ion-list>
-  <ion-item>
-    <ion-label position="floating">Nome</ion-label>
-    <ion-input type="text" [(ngModel)]="item.name" autocapitalize="on"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">Preco</ion-label>
-    <ion-input type="email" [(ngModel)]="item.preco"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">Quantidade</ion-label>
-    <ion-input type="tel" [(ngModel)]="item.quantidade"></ion-input>
-  </ion-item>
-  <ion-button expand="block" (click)="this.save.emit()">
-    <ion-icon slot="start" name="save"></ion-icon>
-    Salvar
-  </ion-button>
-</ion-list>
+<item-form>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="item.name" autocapitalize="on"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Preco</ion-label>
+      <ion-input type="email" [(ngModel)]="item.preco"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Quantidade</ion-label>
+      <ion-input type="tel" [(ngModel)]="item.quantidade"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="this.save.emit()">
+      <ion-icon slot="start" name="save"></ion-icon>
+      Salvar
+    </ion-button>
+  </ion-list>
+<item-form>
