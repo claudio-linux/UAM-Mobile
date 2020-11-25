@@ -62,14 +62,23 @@
     </ion-buttons>
   </ion-toolbar>
 
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
   <ion-list>
-    <ion-item *ngFor="let item of itens">
-      <ion-checkbox slot="start" [(ngModel)]="item.completed"></ion-checkbox>
-      <ion-label>{{item.name}}</ion-label>
+    <ion-item *ngFor="let i of (itens | async)" button (click)="showDetails(i)">
+      <ion-label>
+        <h2>{{i.nome}}</h2>
+        <p>{{i.preco}}</p>
+        <p>{{i.quantidade}}</p>
+      </ion-label>
     </ion-item>
   </ion-list>
 
-
-
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/create">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 </ion-content>
