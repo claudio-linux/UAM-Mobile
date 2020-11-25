@@ -14,7 +14,8 @@ export interface Item {
 
 export class ItemService {
 
-  private itens: Item[] = [];
+  private itens: Item[] = [
+  ];
   private itens$ = new BehaviorSubject<Item[]>([]);
 
   constructor(private storage: Storage) {

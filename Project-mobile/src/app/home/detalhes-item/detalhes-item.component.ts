@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { Item } from 'src/app/services/itens.service';
 
 @Component({
   selector: 'app-detalhes-item',
@@ -7,8 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetalhesItemComponent implements OnInit {
 
-  constructor() { }
+  @Input() item: Item;
+  
+  constructor(private modalController: ModalController) { }
 
   ngOnInit() {}
 
+  public close() {
+    this.modalController.dismiss();
+  }
+
 }
+

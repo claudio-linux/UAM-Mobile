@@ -1,6 +1,9 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { AlertController, ToastController } from '@ionic/angular';
-
+import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { Item, ItemService } from '../services/itens.service';
+import { debounceTime, map, tap } from 'rxjs/operators';
+import { BehaviorSubject, combineLatest, Observable } from 'rxjs';
+import { DetalhesItemComponent } from './detalhes-item/detalhes-item.component';
 
 @Component({
   selector: 'app-home',
@@ -9,24 +12,37 @@ import { AlertController, ToastController } from '@ionic/angular';
 })
 export class HomePage {
 
-@Input() text: string;
+  private search$ = new BehaviorSubject('');
+  public itens: Observable<Item[]> =
+    combineLatest([this.itemService.all(), this.search$]).pipe(
+      debounceTime(200),
+      map(([cs, str]) => cs.filter(i => i.name.startsWith(str))),
+      map(cs => [...cs].sort((a, b) => a.name.localeCompare(b.name))),
+    )
 
-constructor(){}
+  constructor(
+    private modalController: ModalController,
+    private itemService: ItemService
+  ) { }
 
+  public updateSearch(str: string) {
+    this.search$.next(str);
+  }
 
-public itens = [
-  { name: 'Cerveja'},
-  { name: 'Churrasco'},
-];
+  async showDetails(itens: Item) {
+    const modal = await this.modalController.create({
+      component: DetalhesItemComponent,
+      componentProps: {
+        itens
+      }
+    });
 
-public newItem = '';
+    await modal.present();
+  }
 
-public addToList() {
-  this.itens.push({
-    name: this.newItem,
-  });
-  this.newItem = '';
-}
-
+  public doRefresh(event) {
+    this.itemService.add();
+    event.target.complete();
+  }
 
 }
