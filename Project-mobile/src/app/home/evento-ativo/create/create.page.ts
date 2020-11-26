@@ -10,6 +10,7 @@ import { Item, ItemService  } from '../../../services/itens.service';
 export class CreatePage implements OnInit {
 
   public emptyItem: Item = {
+    id: null,
     name: '',
     valor: '',
     quantidade: '',
@@ -21,7 +22,7 @@ export class CreatePage implements OnInit {
   ) { }
 
   ngOnInit() {
-  }
+  } 
 
   public handleSave() {
     this.itensService.create(this.emptyItem);

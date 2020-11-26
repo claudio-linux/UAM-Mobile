@@ -6,9 +6,8 @@ import { IonicModule } from '@ionic/angular';
 import { ItemFormComponent } from '../../evento-ativo/shared/components/item-form/item-form.component';
 
 
-
 @NgModule({
-  declarations: [AmigoFormComponent],
+  declarations: [AmigoFormComponent,ItemFormComponent],
   exports: [AmigoFormComponent, ItemFormComponent],
   imports: [
     CommonModule,

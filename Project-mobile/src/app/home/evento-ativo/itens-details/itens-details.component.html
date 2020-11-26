@@ -11,7 +11,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-component style="height: 100%">
+<ion-content style="height: 100%">
   <ion-card>
     <ion-card-content>
       <ion-row class="ion-align-items-center">
@@ -20,7 +20,6 @@
           <h2>{{item.valor}}</h2>
         </ion-col>
       </ion-row>
-
       <ion-row>
         <ion-list class="ion-no-padding">
           <ion-item>
@@ -28,7 +27,7 @@
               <strong>Quantidade: </strong> {{item.quantidade}}
             </ion-label>
           </ion-item>
-          <ion-button (click)="close()" expand="block" [routerLink]="['/home/evento-ativo/edit/', item.name]">
+          <ion-button (click)="close()" expand="block" [routerLink]="['/home/evento-ativo/edit/'+item.name]">
             <ion-icon slot="start" name="create"></ion-icon>
             Editar
           </ion-button>
@@ -37,4 +36,4 @@
 
     </ion-card-content>
   </ion-card>
-</ion-component>
+</ion-content>

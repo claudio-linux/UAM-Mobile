@@ -1,5 +1,5 @@
 <div class="principal">
-  <ion-header >
+  <ion-header>
     <ion-toolbar>
       <ion-buttons slot="end">
         <ion-router-link href="/home/meu-perfil" class="color">
@@ -8,8 +8,8 @@
           </ion-avatar>
         </ion-router-link>
       </ion-buttons>
-        <ion-title size="large"> Evento ativo </ion-title>
-        <ion-buttons slot="start">
+      <ion-title size="large"> Evento ativo </ion-title>
+      <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
     </ion-toolbar>
@@ -23,7 +23,7 @@
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-  
+
   <ion-content>
     <ion-list>
       <ion-item>
@@ -45,11 +45,11 @@
       <ion-item>
         <ion-icon slot="start" name="person-circle"></ion-icon>
         <ion-router-link href="/home/meu-perfil" class="color">Meu Perfil</ion-router-link>
-      </ion-item>   
+      </ion-item>
       <ion-item>
         <ion-icon slot="start" name="log-out-outline"></ion-icon>
         <ion-router-link href="/login" class="color">Logout</ion-router-link>
-      </ion-item>    
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
@@ -57,21 +57,17 @@
 
 <ion-content class="ion-padding">
   <ion-router-outlet id="menu-content"></ion-router-outlet>
-<ion-content>
-  <ion-content>
-    <ion-list>
-      <ion-item *ngFor="let i of itens" button (click)="showDetails(i)">
-        <ion-label>
-          <h2>{{i.name}}</h2>
-          <p>{{i.valor}}</p>
-        </ion-label>
-      </ion-item>
-    </ion-list>
-
-    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-      <ion-fab-button routerLink="/home/evento-ativo/create">
-        <ion-icon name="add"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-  </ion-content>
+  <ion-list>
+    <ion-item *ngFor="let i of itens" button (click)="showDetails(i)">
+      <ion-label>
+        <h2>{{i.name}}</h2>
+        <p>{{i.valor}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/home/evento-ativo/create">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
