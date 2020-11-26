@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Detalhes
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-component style="height: 100%">
+  <ion-card>
+    <ion-card-content>
+      <ion-row class="ion-align-items-center">
+        <ion-col>
+          <h1>{{item.name}}</h1>
+          <h2>{{item.valor}}</h2>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-list class="ion-no-padding">
+          <ion-item>
+            <ion-label>
+              <strong>Quantidade: </strong> {{item.quantidade}}
+            </ion-label>
+          </ion-item>
+          <ion-button (click)="close()" expand="block" [routerLink]="['/home/evento-ativo/edit/', item.name]">
+            <ion-icon slot="start" name="create"></ion-icon>
+            Editar
+          </ion-button>
+        </ion-list>
+      </ion-row>
+
+    </ion-card-content>
+  </ion-card>
+</ion-component>

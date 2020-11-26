@@ -7,13 +7,15 @@ const routes: Routes = [
   {
     path: '',
     component: EventoAtivoPage
-  },  {
-    path: 'itens-details',
-    loadChildren: () => import('./itens-details/itens-details.module').then( m => m.ItensDetailsPageModule)
   },
+
   {
     path: 'create',
     loadChildren: () => import('./create/create.module').then( m => m.CreatePageModule)
+  },
+  {
+    path: 'edit',
+    loadChildren: () => import('./edit/edit.module').then( m => m.EditPageModule)
   }
 
 ];

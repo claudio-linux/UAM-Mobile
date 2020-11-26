@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { Item, ItemService  } from '../../../services/itens.service';
 
 @Component({
   selector: 'app-create',
@@ -7,7 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreatePage implements OnInit {
 
-  constructor() { }
+  public emptyItem: Item = {
+    name: '',
+    valor: '',
+    quantidade: '',
+  }
+
+  constructor(
+    private itensService: ItemService,
+    private navCtrl: NavController
+  ) { }
 
   ngOnInit() {
   }

@@ -1,4 +1,13 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ItensDetailsComponent } from './itens-details/itens-details.component';
+import { ItemService } from '../../services/itens.service';
+
+export interface Item {
+  name: string;
+  valor: string;
+  quantidade: string;
+}
 
 @Component({
   selector: 'app-evento-ativo',
@@ -6,23 +15,27 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./evento-ativo.page.scss'],
 })
 export class EventoAtivoPage implements OnInit {
-  
-  @Input() text: string;
-  constructor() { }
+ 
+  public itens: Item[] = this.itensService.all();
+
+  constructor(
+    private modalController: ModalController,
+    private itensService: ItemService
+  ) { }
+
+  async showDetails(item: Item){
+    const modal = await this.modalController.create({
+      component: ItensDetailsComponent,
+      componentProps: {
+        item
+      }
+    });
+
+    await modal.present();
+
+  }
 
   ngOnInit() {
   }
-  public itens = [
-    { name: 'Cerveja'},
-    { name: 'Churrasco'},
-  ];
-  
-  public newItem = '';
-  
-  public addToList() {
-    this.itens.push({
-      name: this.newItem,
-    });
-    this.newItem = '';
-  }
+
 }

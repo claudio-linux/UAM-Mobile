@@ -1,20 +1,21 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="end">
-      <ion-button>
+<div class="principal">
+  <ion-header >
+    <ion-toolbar>
+      <ion-buttons slot="end">
         <ion-router-link href="/home/meu-perfil" class="color">
           <ion-avatar class="daily-scenary-avatar">
             <img class="daily-scenary-picture" src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
           </ion-avatar>
         </ion-router-link>
-      </ion-button>
-    </ion-buttons>
-    <ion-title>Evento ativo</ion-title>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+      </ion-buttons>
+        <ion-title size="large"> Evento ativo </ion-title>
+        <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+</div>
+
 
 <ion-menu contentId="menu-content" side="start" type="overlay">
   <ion-header>
@@ -22,11 +23,12 @@
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
+  
   <ion-content>
     <ion-list>
       <ion-item>
         <ion-icon slot="start" name="home"></ion-icon>
-        <ion-router-link href="/home" class="color">Home</ion-router-link>
+        <ion-router-link href="/home" class="color">Home </ion-router-link>
       </ion-item>
       <ion-item>
         <ion-icon slot="start" name="calendar"></ion-icon>
@@ -43,11 +45,7 @@
       <ion-item>
         <ion-icon slot="start" name="person-circle"></ion-icon>
         <ion-router-link href="/home/meu-perfil" class="color">Meu Perfil</ion-router-link>
-      </ion-item>
-      <ion-item>
-        <ion-icon slot="start" name="receipt"></ion-icon>
-        <ion-router-link href="/home/lista-de-amigos" class="color">Lista de amigos</ion-router-link>
-      </ion-item>    
+      </ion-item>   
       <ion-item>
         <ion-icon slot="start" name="log-out-outline"></ion-icon>
         <ion-router-link href="/login" class="color">Logout</ion-router-link>
@@ -59,46 +57,21 @@
 
 <ion-content class="ion-padding">
   <ion-router-outlet id="menu-content"></ion-router-outlet>
-  <ion-row class="ion-padding">
-    <ion-col size="6">
-      <img src="https://ogimg.infoglobo.com.br/in/24414537-563-49e/FT1086A/652/festa.PNG">
-    </ion-col>
-    <ion-col>
-      Festa: COVID-19<br>
-      Local: Av. Paulista 666, São Paulo<br>
-      Horário: 03h00
-    </ion-col>
-  </ion-row>
+<ion-content>
+  <ion-content>
+    <ion-list>
+      <ion-item *ngFor="let i of itens" button (click)="showDetails(i)">
+        <ion-label>
+          <h2>{{i.name}}</h2>
+          <p>{{i.valor}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
 
-    <p class="center">
-      <ion-button (click)="presentToast()" routerLink="/home/pagamento" routerDirection="root">
-          Contribuir com dinheiro
-        <ion-icon slot="icon-only" name="wallet"></ion-icon>
-      </ion-button>
-    </p>
-
-
-  <ion-toolbar color="light" class="ion-margin-bottom">
-    <ion-item color="light">
-      <ion-label position="floating">Nova contribuição</ion-label>
-      <ion-input [(ngModel)]="newTask"></ion-input>
-    </ion-item>
-
-    <ion-buttons slot="end">
-      <ion-button (click)="addToList()">
-        <ion-icon name="add" slot="icon-only"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-
-  <ion-list>
-    <ion-item *ngFor="let item of itens">
-      <ion-checkbox slot="start" [(ngModel)]="item.completed"></ion-checkbox>
-      <ion-label>{{item.name}}</ion-label>
-    </ion-item>
-  </ion-list>
-
-
-
-
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button routerLink="/home/evento-ativo/create">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ion-content>
 </ion-content>

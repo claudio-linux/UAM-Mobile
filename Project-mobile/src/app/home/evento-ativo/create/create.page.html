@@ -1,9 +1,12 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>create</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home/lista-de-amigos"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Criar</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <app-item-form [item]="emptyItem" (save)="handleSave()"></app-item-form>
 </ion-content>
