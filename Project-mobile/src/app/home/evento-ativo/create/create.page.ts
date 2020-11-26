@@ -23,4 +23,9 @@ export class CreatePage implements OnInit {
   ngOnInit() {
   }
 
+  public handleSave() {
+    this.itensService.create(this.emptyItem);
+    this.navCtrl.back();
+  }
+
 }

@@ -13,8 +13,7 @@ import { ItemFormComponent } from '../../evento-ativo/shared/components/item-for
   imports: [
     CommonModule,
     FormsModule,
-    IonicModule,
-    ItemFormComponent
+    IonicModule
   ]
 })
 export class SharedModule { }
