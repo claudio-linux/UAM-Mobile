@@ -36,7 +36,7 @@
               <strong>Telefone: </strong> {{amigo.phone}}
             </ion-label>
           </ion-item>
-          <ion-button (click)="close()" expand="block" [routerLink]="['/home/lista-de-amigos/edit/', amigo.username]">
+          <ion-button (click)="close()" expand="block" [routerLink]="['/home/lista-de-amigos/edit/'+amigo.username]">
             <ion-icon slot="start" name="create"></ion-icon>
             Editar
           </ion-button>

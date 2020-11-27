@@ -2,10 +2,12 @@ import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 
 export interface Amigo {
+  id: number;
   name: string;
   username: string;
   email: string;
   phone: string;
+  
 }
 
 @Injectable({
@@ -38,4 +40,46 @@ export class AmigosService {
     this.contacts[idx] = { ...contact };
     this.storage.set('contacts', this.contacts);
   }
+
+  //////////////////////
+////////////
+
+
+
+  public empty(): Amigo {
+    return {
+  id:null,   
+  name: '',
+  username: '',
+  email: '',
+  phone: '',
+    }
+  }
+///////////////////////////
+  public allAmigos(): Readonly<Array<Readonly<Amigo>>> {
+    return this.contacts;
+  }
+
+  public find(name: string): Amigo {
+    return {
+      ...this.contacts.find(i => i.name === name)
+    };
+  }
+
+  public updated(updatedContact: Amigo): void{
+    const itemIndex = this.contacts.findIndex(i => i.name === updatedContact.name);
+    this.contacts[itemIndex] = updatedContact;
+    this.storage.set('contact', this.contacts);
+  }
+
+  public created(newContact: Amigo){
+    const maxContact = Math.max(...this.contacts.map(i => i.id));
+    this.contacts.push({
+      ...newContact, id: maxContact + 1
+    });
+    this.storage.set('contact', this.contacts);
+  }
+
 }
+
+

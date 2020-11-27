@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import {Amigo} from '../lista-de-amigos.page'
+import {Amigo} from '../../../services/amigos.service';
 
 @Component({
   selector: 'app-amigo-details',
