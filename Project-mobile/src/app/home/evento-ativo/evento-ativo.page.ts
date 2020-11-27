@@ -16,6 +16,9 @@ export class EventoAtivoPage implements OnInit {//HOME PAGE BUSCANDO OS DADOS DO
     private modalController: ModalController,
     private itensService: ItemService
   ) { }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
   async showDetails(item: Item){
     const modal = await this.modalController.create({
