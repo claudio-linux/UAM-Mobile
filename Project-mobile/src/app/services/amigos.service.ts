@@ -45,14 +45,13 @@ export class AmigosService {
 ////////////
 
 
-
   public empty(): Amigo {
     return {
-  id:null,   
-  name: '',
-  username: '',
-  email: '',
-  phone: '',
+      id: null,   
+      username: '',
+      name: '',
+      email: '',
+      phone: '',
     }
   }
 ///////////////////////////
@@ -62,22 +61,22 @@ export class AmigosService {
 
   public find(name: string): Amigo {
     return {
-      ...this.contacts.find(i => i.name === name)
+      ...this.contacts.find(c => c.name === name)
     };
   }
 
   public updated(updatedContact: Amigo): void{
-    const itemIndex = this.contacts.findIndex(i => i.name === updatedContact.name);
+    const itemIndex = this.contacts.findIndex(c => c.name === updatedContact.name);
     this.contacts[itemIndex] = updatedContact;
-    this.storage.set('contact', this.contacts);
+    this.storage.set('name', this.contacts);
   }
 
   public created(newContact: Amigo){
-    const maxContact = Math.max(...this.contacts.map(i => i.id));
+    const maxContact = Math.max(...this.contacts.map(c => c.id));
     this.contacts.push({
       ...newContact, id: maxContact + 1
     });
-    this.storage.set('contact', this.contacts);
+    this.storage.set('name', this.contacts);
   }
 
 }

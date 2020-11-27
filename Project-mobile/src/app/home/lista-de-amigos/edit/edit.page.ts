@@ -12,7 +12,6 @@ export class EditPage implements OnInit {
 
   public contact : Amigo;
   
-
   constructor(
     private route: ActivatedRoute, 
     private amigoService: AmigosService,

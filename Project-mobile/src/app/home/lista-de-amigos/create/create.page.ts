@@ -10,10 +10,11 @@ import { Amigo, AmigosService  } from '../../../services/amigos.service';
 export class CreatePage implements OnInit {
 
   public emptyContact: Amigo = {
+    id: null,
+    username: '',
     name: '',
     email: '',
-    phone: '',
-    username: ''
+    phone: ''
   }
 
   constructor(
