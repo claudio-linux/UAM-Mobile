@@ -1,15 +1,19 @@
-<ion-header>
-  <ion-toolbar color="tertiary">
-    <ion-buttons slot="start">
-      <ion-button>
-      </ion-button>
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-router-link href="/home/meu-perfil" class="color">
+        <ion-avatar class="daily-scenary-avatar">
+          <img class="daily-scenary-picture" src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
+        </ion-avatar>
+      </ion-router-link>
     </ion-buttons>
-    <ion-title>Meus eventos</ion-title>
-    <ion-buttons slot="start">
+      <ion-title size="large"> Meus Eventos </ion-title>
+      <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
 
 <ion-menu contentId="menu-content" side="start" type="overlay">
   <ion-header>
@@ -20,27 +24,46 @@
   <ion-content>
     <ion-list>
       <ion-item>
-        <ion-icon slot="start" name="timer-outline"></ion-icon>
-        <ion-label>Arquivar</ion-label>
+        <ion-icon slot="start" name="home"></ion-icon>
+        <ion-router-link href="/home" class="color">Home</ion-router-link>
       </ion-item>
       <ion-item>
-        <ion-icon slot="start" name="timer-outline"></ion-icon>
-        <ion-label>Arquivar</ion-label>
+        <ion-icon slot="start" name="add-circle"></ion-icon>
+        <ion-router-link href="/home/criar-festa" class="color">Criar Festa</ion-router-link>
       </ion-item>
       <ion-item>
-        <ion-icon slot="start" name="timer-outline"></ion-icon>
-        <ion-label>Arquivar</ion-label>
+        <ion-icon slot="start" name="people-circle"></ion-icon>
+        <ion-router-link href="/home/parceiros" class="color">Parceiros</ion-router-link>
       </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="person-circle"></ion-icon>
+        <ion-router-link href="/home/meu-perfil" class="color">Meu Perfil</ion-router-link>
+      </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="receipt"></ion-icon>
+        <ion-router-link href="/home/lista-de-amigos" class="color">Lista de amigos</ion-router-link>
+      </ion-item>    
+      <ion-item>
+        <ion-icon slot="start" name="log-out-outline"></ion-icon>
+        <ion-router-link href="/login" class="color">Logout</ion-router-link>
+      </ion-item>    
     </ion-list>
   </ion-content>
 </ion-menu>
 
+
 <ion-content class="ion-padding">
   <ion-router-outlet id="menu-content"></ion-router-outlet>
+  <ion-row class="ion-align-items-center ion-margin-top">
+    <ion-col size="auto">
+      <ion-title>Evento atual</ion-title>
+    </ion-col>
+    <ion-col class="ion-text-end">
+      <ion-router-link href="/home/evento-ativo" class="color">Ver Evento</ion-router-link>
+    </ion-col>
+  </ion-row>
 
-  <ion-toolbar>
-    <ion-title>Evento atual</ion-title>
-  </ion-toolbar>
+
 
   <ion-row class="ion-padding">
     <ion-col size="6">
@@ -53,9 +76,9 @@
     </ion-col>
   </ion-row>
 
-  <ion-toolbar>
+ 
     <ion-title> Eventos passados</ion-title>
-  </ion-toolbar>
+ 
 
 
   <ion-row class="ion-padding">

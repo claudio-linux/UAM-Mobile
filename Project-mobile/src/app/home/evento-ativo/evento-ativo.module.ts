@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { EventoAtivoPageRoutingModule } from './evento-ativo-routing.module';
 
 import { EventoAtivoPage } from './evento-ativo.page';
+import { ItensDetailsComponent } from './itens-details/itens-details.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { EventoAtivoPage } from './evento-ativo.page';
     IonicModule,
     EventoAtivoPageRoutingModule
   ],
-  declarations: [EventoAtivoPage]
+  declarations: [EventoAtivoPage, ItensDetailsComponent]
 })
 export class EventoAtivoPageModule {}

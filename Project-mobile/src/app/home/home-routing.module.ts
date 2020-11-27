@@ -26,6 +26,22 @@ const routes: Routes = [
   {
     path: 'parceiros',
     loadChildren: () => import('./parceiros/parceiros.module').then( m => m.ParceirosPageModule)
+  },
+  {
+    path: 'lista-de-amigos',
+    loadChildren: () => import('./lista-de-amigos/lista-de-amigos.module').then( m => m.ListaDeAmigosPageModule)
+  },
+  {
+    path: 'pagamento',
+    loadChildren: () => import('./pagamento/pagamento.module').then( m => m.PagamentoPageModule)
+  },
+  {
+    path: 'modalone',
+    loadChildren: () => import('./modalone/modalone.module').then( m => m.ModalonePageModule)
+  },
+  {
+    path: 'modaltwo',
+    loadChildren: () => import('./modaltwo/modaltwo.module').then( m => m.ModaltwoPageModule)
   }
 ];
 
@@ -33,4 +49,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomePageRoutingModule {}
+export class HomePageRoutingModule {"teste1234"}

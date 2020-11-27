@@ -1,0 +1,32 @@
+import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { Amigo, AmigosService  } from '../../../services/amigos.service';
+
+@Component({
+  selector: 'app-create',
+  templateUrl: './create.page.html',
+  styleUrls: ['./create.page.scss'],
+})
+export class CreatePage implements OnInit {
+
+  public emptyContact: Amigo = {
+    name: '',
+    email: '',
+    phone: '',
+    username: ''
+  }
+
+  constructor(
+    private amigosService: AmigosService,
+    private navCtrl: NavController
+  ) { }
+
+  ngOnInit() {
+  }
+
+  public handleSave() {
+    this.amigosService.create(this.emptyContact);
+    this.navCtrl.back();
+  }
+
+}
