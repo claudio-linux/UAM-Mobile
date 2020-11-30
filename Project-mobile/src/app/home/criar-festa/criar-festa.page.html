@@ -61,6 +61,20 @@
       <ion-input type="text" placeholder="Resenha" maxlength=50 minlength=20></ion-input>
     </ion-item>
 
+
+
+
+
+    <ion-item>
+      <ion-label position="floating">Local do evento</ion-label>
+      <ion-input type="text" placeholder="Digitar a Cidade"></ion-input>
+
+      <ion-button routerLink="/home/cidades" routerDirection="root">
+        Identificar localização
+        <ion-icon class="ion-align-items-center" slot="icon-only" name="location"></ion-icon>
+      </ion-button>
+    </ion-item>
+
     <ion-item>
       <ion-label position="floating">Responssavel pelo evento </ion-label>
       <ion-input type="text" placeholder="Jão Silva" maxlength=30 minlength=15></ion-input>
@@ -102,7 +116,7 @@
     </ion-item>
 
 
-
+    <!-- 
     <ion-item>
       <ion-label position="floating">Local do evento</ion-label>
       <ion-input type="text" placeholder="Digitar a Cidade"></ion-input>
@@ -115,7 +129,7 @@
         <ion-label>s {{s.title}}</ion-label>
       </ion-item>
     </ion-list>
-
+  -->
 
     <ion-item>
       <ion-label position="floating">Fotos do evento</ion-label>

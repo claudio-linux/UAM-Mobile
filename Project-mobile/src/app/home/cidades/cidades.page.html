@@ -1,14 +1,59 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>create</ion-title>
+    <ion-buttons slot="end">
+      <ion-router-link href="/home/meu-perfil" class="color">
+        <ion-avatar class="daily-scenary-avatar">
+          <img class="daily-scenary-picture" src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
+        </ion-avatar>
+      </ion-router-link>
+    </ion-buttons>
+    <ion-title size="auto"> Identificar localização </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button defaultHref="/home/criar-festa"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
+<ion-menu contentId="menu-content" side="start" type="overlay">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-icon slot="start" name="home"></ion-icon>
+        <ion-router-link href="/home" class="color">Home</ion-router-link>
+      </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="calendar"></ion-icon>
+        <ion-router-link href="/home/meus-eventos" class="color">Meus eventos</ion-router-link>
+      </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="people-circle"></ion-icon>
+        <ion-router-link href="/home/parceiros" class="color">Parceiros</ion-router-link>
+      </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="person-circle"></ion-icon>
+        <ion-router-link href="/home/meu-perfil" class="color">Meu Perfil</ion-router-link>
+      </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="receipt"></ion-icon>
+        <ion-router-link href="/home/lista-de-amigos" class="color">Lista de amigos</ion-router-link>
+      </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="log-out-outline"></ion-icon>
+        <ion-router-link href="/login" class="color">Logout</ion-router-link>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
 <ion-content>
-  <ion-searchbar placeholder="Buscar Cidade" [(ngModel)]="query" (ionChange)="search()"> </ion-searchbar>
-  <ion-list>
-    <ion-item button (click)="create(s)" *ngFor="let s of suggestions">
-      <ion-label>{{s.title}}</ion-label>
-    </ion-item>
-  </ion-list>
+  <ion-content>
+    <div id="map"></div>
+  </ion-content>
 </ion-content>
