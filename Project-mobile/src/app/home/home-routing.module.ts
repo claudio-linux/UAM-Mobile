@@ -42,7 +42,11 @@ const routes: Routes = [
   {
     path: 'modaltwo',
     loadChildren: () => import('./modaltwo/modaltwo.module').then( m => m.ModaltwoPageModule)
+  },  {
+    path: 'cidades',
+    loadChildren: () => import('./cidades/cidades.module').then( m => m.CidadesPageModule)
   }
+
 ];
 
 @NgModule({

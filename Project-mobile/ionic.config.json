@@ -1,5 +1,8 @@
 {
   "name": "Project-mobile",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }

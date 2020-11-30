@@ -1,7 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CreatePage } from '../../../create/create.page';
-import { SharedModule } from '../../../../lista-de-amigos/shared/shared.module';
-
 
 @Component({
   selector: 'app-item-form',

@@ -1,51 +1,60 @@
 import { Component, OnInit } from '@angular/core';
-import { ToastController } from '@ionic/angular';
+import { ActivatedRoute } from '@angular/router';
+import { NavController, ToastController } from '@ionic/angular';
+import { City, CityService } from '../../services/city.service';
+import { CityResult } from '../../services/metaweather.service';
+import { WeatherService } from '../../services/weather.service';
+
 
 @Component({
   selector: 'app-criar-festa',
   templateUrl: './criar-festa.page.html',
   styleUrls: ['./criar-festa.page.scss'],
 })
-export class CriarFestaPage implements OnInit {
+export class CriarFestaPage {
 
-  constructor(public toastController: ToastController, private cityService: City) {}
+  public query = '';
+  public sugestions: CityResult[] = [];
+  public city: City;
+
+  constructor(
+    private cityService: CityService,
+    private navCtrl: NavController,
+    private weatherService: WeatherService,
+    private route: ActivatedRoute,
+    public toastController: ToastController
+
+  ) { }
+
+  public cities = this.cityService.all();
+
+
+  ngOnInit() {
+    const id = +this.route.snapshot.paramMap.get('id');
+
+  }
+
+  public create(cr: CityResult) {
+    const [lat, long] = cr.latt_long.split(',')
+    this.cityService.create({
+      id: cr.woeid,
+      name: cr.title,
+    })
+    this.navCtrl.back;
+  }
+
+  public async search() {
+    this.sugestions = await this.weatherService.search(this.query);
+  }
 
   async presentToast() {
     const toast = await this.toastController.create({
       message: 'Evento criado com sucesso',
       duration: 4000,
       color: 'success'
-      
+
     });
     toast.present();
-  }
 
-  async presentToastWithOptions() {
-    const toast = await this.toastController.create({
-      header: 'Toast header',
-      message: 'Evento criado com sucesso',
-      position: 'top',
-      buttons: [
-        {
-          side: 'start',
-          icon: 'star',
-          text: 'Favorite',
-          handler: () => {
-            console.log('Favorite clicked');
-          }
-        }, {
-          text: 'Done',
-          role: 'cancel',
-          handler: () => {
-            console.log('Cancel clicked');
-          }
-        }
-      ]
-    });
-    toast.present();
   }
-
-  ngOnInit() {
-  }
-
 }

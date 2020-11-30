@@ -9,8 +9,9 @@ export interface City {
 @Injectable({
   providedIn: 'root'
 })
-export class CityService extends AbstractService<City> {
 
+
+export class CityService extends AbstractService<City> {
   protected getKey(): string {
     return 'cities';
   }

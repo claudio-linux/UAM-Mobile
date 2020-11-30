@@ -7,13 +7,14 @@ import { Amigo, AmigosService  } from '../../../services/amigos.service';
   templateUrl: './create.page.html',
   styleUrls: ['./create.page.scss'],
 })
-export class CreatePage implements OnInit {
+export class CreatePage {
 
   public emptyContact: Amigo = {
+    id: null,
+    username: '',
     name: '',
     email: '',
-    phone: '',
-    username: ''
+    phone: ''
   }
 
   constructor(

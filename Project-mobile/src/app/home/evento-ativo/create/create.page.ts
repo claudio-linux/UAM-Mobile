@@ -7,7 +7,7 @@ import { Item, ItemService  } from '../../../services/itens.service';
   templateUrl: './create.page.html',
   styleUrls: ['./create.page.scss'],
 })
-export class CreatePage implements OnInit {
+export class CreatePage  {
 
   public emptyItem: Item = {
     id: null,
