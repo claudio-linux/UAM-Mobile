@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { AmigoFormComponent } from './amigo-form.component';
+import { AmigoFormComponent } from '../components/amigo-form.component';
 
 describe('AmigoFormComponent', () => {
   let component: AmigoFormComponent;
