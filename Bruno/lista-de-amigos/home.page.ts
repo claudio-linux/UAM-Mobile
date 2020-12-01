@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { Item, ItemService } from '../service/itens.service';
+import { debounceTime, map, tap } from 'rxjs/operators';
+import { BehaviorSubject, combineLatest, Observable } from 'rxjs';
+import { DetalhesItemComponent } from './detalhes-item/detalhes-item.component';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +12,37 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  private search$ = new BehaviorSubject('');
+  public itens: Observable<Item[]> =
+    combineLatest([this.itemService.all(), this.search$]).pipe(
+      debounceTime(200),
+      map(([is, str]) => is.filter(i => i.name.startsWith(str))),
+      map(is => [...is].sort((a, b) => a.name.localeCompare(b.name))),
+    )
+
+  constructor(
+    private modalController: ModalController,
+    private itemService: ItemService
+  ) { }
+
+  public updateSearch(str: string) {
+    this.search$.next(str);
+  }
+
+  async showDetails(itens: Listadeamigos) {
+    const modal = await this.modalController.create({
+      component: DetalhesItemComponent,
+      componentProps: {
+        itens
+      }
+    });
+
+    await modal.present();
+  }
+
+  public doRefresh(event) {
+    this.itemService.add();
+    event.target.complete();
+  }
 
 }
