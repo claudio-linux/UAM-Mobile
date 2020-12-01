@@ -42,7 +42,8 @@ const routes: Routes = [
   {
     path: 'modaltwo',
     loadChildren: () => import('./modaltwo/modaltwo.module').then( m => m.ModaltwoPageModule)
-  },  {
+  },
+  {
     path: 'cidades',
     loadChildren: () => import('./cidades/cidades.module').then( m => m.CidadesPageModule)
   }
@@ -53,4 +54,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomePageRoutingModule {"teste1234"}
+export class HomePageRoutingModule {}
