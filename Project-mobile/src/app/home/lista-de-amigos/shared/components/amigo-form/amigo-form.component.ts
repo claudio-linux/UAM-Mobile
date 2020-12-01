@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CreatePage } from '../../../create/create.page';
 
+
 @Component({
   selector: 'app-amigo-form',
   templateUrl: './amigo-form.component.html',

@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { EditPageRoutingModule } from './edit-routing.module';
 
 import { EditPage } from './edit.page';
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from '../../lista-de-amigos/shared/shared.module';
 
 @NgModule({
   imports: [
