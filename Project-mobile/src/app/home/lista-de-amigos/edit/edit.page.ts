@@ -19,8 +19,8 @@ export class EditPage implements OnInit {
     ) { }
 
   ngOnInit() {
-    const name = this.route.snapshot.paramMap.get('name');
-    this.contact = this.amigoService.get(name);
+    const username = this.route.snapshot.paramMap.get('username');
+    this.contact = this.amigoService.find(username);
   }
 
   public handleSave(){
