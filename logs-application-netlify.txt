@@ -1,0 +1,846 @@
+6:26:58 PM: Build ready to start
+6:27:00 PM: build-image version: 09c2cdcdf242cf2f57c9ee0fcad9d298fad9ad41
+6:27:00 PM: build-image tag: v3.5.0
+6:27:00 PM: buildbot version: cc43e42ec44f57fc7c434bc20ef842caf4073be1
+6:27:00 PM: Building without cache
+6:27:00 PM: Starting to prepare the repo for build
+6:27:01 PM: No cached dependencies found. Cloning fresh repo
+6:27:01 PM: git clone https://github.com/claudio-linux/UAM-Mobile
+6:27:02 PM: Preparing Git Reference refs/heads/BKP_MOBILE
+6:27:04 PM: Starting build script
+6:27:04 PM: Installing dependencies
+6:27:04 PM: Python version set to 2.7
+6:27:05 PM: v12.18.0 is already installed.
+6:27:06 PM: Now using node v12.18.0 (npm v6.14.4)
+6:27:06 PM: Started restoring cached build plugins
+6:27:06 PM: Finished restoring cached build plugins
+6:27:06 PM: Attempting ruby version 2.7.1, read from environment
+6:27:08 PM: Using ruby version 2.7.1
+6:27:08 PM: Using PHP version 5.6
+6:27:08 PM: Started restoring cached node modules
+6:27:08 PM: Finished restoring cached node modules
+6:27:09 PM: Installing NPM modules using NPM version 6.14.4
+6:27:52 PM: > core-js@3.6.5 postinstall /opt/build/repo/Project-mobile/node_modules/core-js
+6:27:52 PM: > node -e "try{require('./postinstall')}catch(e){}"
+6:27:52 PM: > @angular/cli@10.0.8 postinstall /opt/build/repo/Project-mobile/node_modules/@angular/cli
+6:27:52 PM: > node ./bin/postinstall/script.js
+6:27:55 PM: npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/webpack-dev-server/node_modules/fsevents):
+6:27:55 PM: npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+6:27:55 PM: npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+6:27:55 PM: npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+6:27:55 PM: npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules/fsevents):
+6:27:55 PM: npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+6:27:55 PM: added 1569 packages from 1223 contributors and audited 1575 packages in 45.255s
+6:27:57 PM: 81 packages are looking for funding
+6:27:57 PM:   run `npm fund` for details
+6:27:57 PM: found 0 vulnerabilities
+6:27:57 PM: NPM modules installed
+6:27:57 PM: Started restoring cached go cache
+6:27:57 PM: Finished restoring cached go cache
+6:27:57 PM: go version go1.14.4 linux/amd64
+6:27:57 PM: go version go1.14.4 linux/amd64
+6:27:57 PM: Installing missing commands
+6:27:57 PM: Verify run directory
+6:28:00 PM: ​
+6:28:00 PM: ────────────────────────────────────────────────────────────────
+6:28:00 PM:   Netlify Build                                                 
+6:28:00 PM: ────────────────────────────────────────────────────────────────
+6:28:00 PM: ​
+6:28:00 PM: ❯ Version
+6:28:00 PM:   @netlify/build 5.4.0
+6:28:00 PM: ​
+6:28:00 PM: ❯ Flags
+6:28:00 PM:   deployId: 5fc6b5226c3c56641e10f385
+6:28:00 PM:   mode: buildbot
+6:28:00 PM: ​
+6:28:00 PM: ❯ Current directory
+6:28:00 PM:   /opt/build/repo/Project-mobile
+6:28:00 PM: ​
+6:28:00 PM: ❯ Config file
+6:28:00 PM:   No config file was defined: using default values.
+6:28:00 PM: ​
+6:28:00 PM: ❯ Context
+6:28:00 PM:   production
+6:28:00 PM: ​
+6:28:00 PM: ────────────────────────────────────────────────────────────────
+6:28:00 PM:   1. Build command from Netlify app                             
+6:28:00 PM: ────────────────────────────────────────────────────────────────
+6:28:00 PM: ​
+6:28:00 PM: $ npx ionic build --prod --enableLint false
+6:28:13 PM: npx: installed 225 in 13.165s
+6:28:13 PM: > ng run app:build:production
+6:28:23 PM: Compiling @ionic-native/core : module as esm5
+6:28:23 PM: Compiling @angular/compiler/testing : es2015 as esm2015
+6:28:24 PM: Compiling @angular/core : es2015 as esm2015
+6:28:35 PM: Compiling @angular/common : es2015 as esm2015
+6:28:35 PM: Compiling @angular/core/testing : es2015 as esm2015
+6:28:35 PM: Compiling @ionic-native/splash-screen : module as esm5
+6:28:35 PM: Compiling @ionic-native/status-bar : module as esm5
+6:28:39 PM: Compiling @ionic-native/geolocation : module as esm5
+6:28:48 PM: Compiling @angular/forms : es2015 as esm2015
+6:28:48 PM: Compiling @angular/platform-browser : es2015 as esm2015
+6:28:48 PM: Compiling @angular/router : es2015 as esm2015
+6:28:48 PM: Compiling @angular/common/http : es2015 as esm2015
+6:28:53 PM: Compiling @ionic/storage : es2015 as esm2015
+6:28:57 PM: Compiling @angular/platform-browser/testing : es2015 as esm2015
+6:28:57 PM: Compiling @angular/platform-browser-dynamic : es2015 as esm2015
+6:29:06 PM: Compiling @ionic/angular : es2015 as esm2015
+6:29:07 PM: Compiling @angular/platform-browser-dynamic/testing : es2015 as esm2015
+6:29:11 PM: - Generating browser application bundles...
+6:29:34 PM: ✔ Browser application bundle generation complete.
+6:29:34 PM: Error: src/app/home/home.page.html:4:7 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 4       <ion-router-link href="/home/meu-perfil" class="color">
+6:29:34 PM:         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/home.page.ts:5:16
+6:29:34 PM:     5   templateUrl: 'home.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component HomePage.
+6:29:34 PM: src/app/home/home.page.html:27:7 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 27       <ion-router-link href="/home/meus-eventos" class="color">Meus eventos</ion-router-link>
+6:29:34 PM:          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/home.page.ts:5:16
+6:29:34 PM:     5   templateUrl: 'home.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component HomePage.
+6:29:34 PM: src/app/home/home.page.html:31:7 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 31       <ion-router-link href="/home/criar-festa" class="color">Criar Festa</ion-router-link>
+6:29:34 PM:          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/home.page.ts:5:16
+6:29:34 PM:     5   templateUrl: 'home.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component HomePage.
+6:29:34 PM: src/app/home/home.page.html:35:7 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 35       <ion-router-link href="/home/parceiros" class="color">Parceiros</ion-router-link>
+6:29:34 PM:          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/home.page.ts:5:16
+6:29:34 PM:     5   templateUrl: 'home.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component HomePage.
+6:29:34 PM: src/app/home/home.page.html:39:7 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 39       <ion-router-link href="/home/meu-perfil" class="color">Meu Perfil</ion-router-link>
+6:29:34 PM:          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/home.page.ts:5:16
+6:29:34 PM:     5   templateUrl: 'home.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component HomePage.
+6:29:34 PM: src/app/home/home.page.html:43:7 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 43       <ion-router-link href="/home/lista-de-amigos" class="color">Lista de amigos</ion-router-link>
+6:29:34 PM:          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/home.page.ts:5:16
+6:29:34 PM:     5   templateUrl: 'home.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component HomePage.
+6:29:34 PM: src/app/home/home.page.html:47:7 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 47       <ion-router-link href="/login" class="color">Logout</ion-router-link>
+6:29:34 PM:          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/home.page.ts:5:16
+6:29:34 PM:     5   templateUrl: 'home.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component HomePage.
+6:29:34 PM: src/app/home/home.page.html:113:7 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 113       <ion-router-link href="/home/meus-eventos" class="color">Mais</ion-router-link>
+6:29:34 PM:           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/home.page.ts:5:16
+6:29:34 PM:     5   templateUrl: 'home.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component HomePage.
+6:29:34 PM: src/app/home/home.page.html:141:5 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 141     <ion-router-link href="/home/lista-de-amigos" class="color">Mais</ion-router-link>
+6:29:34 PM:         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/home.page.ts:5:16
+6:29:34 PM:     5   templateUrl: 'home.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component HomePage.
+6:29:34 PM: src/app/home/criar-festa/criar-festa.page.html:4:7 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 4       <ion-router-link href="/home/meu-perfil" class="color">
+6:29:34 PM:         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/criar-festa/criar-festa.page.ts:11:16
+6:29:34 PM:     11   templateUrl: './criar-festa.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component CriarFestaPage.
+6:29:34 PM: src/app/home/criar-festa/criar-festa.page.html:28:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 28         <ion-router-link href="/home" class="color">Home</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/criar-festa/criar-festa.page.ts:11:16
+6:29:34 PM:     11   templateUrl: './criar-festa.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component CriarFestaPage.
+6:29:34 PM: src/app/home/criar-festa/criar-festa.page.html:32:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 32         <ion-router-link href="/home/meus-eventos" class="color">Meus eventos</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/criar-festa/criar-festa.page.ts:11:16
+6:29:34 PM:     11   templateUrl: './criar-festa.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component CriarFestaPage.
+6:29:34 PM: src/app/home/criar-festa/criar-festa.page.html:36:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 36         <ion-router-link href="/home/parceiros" class="color">Parceiros</ion-router-link>
+6:29:34 PM:    1m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/criar-festa/criar-festa.page.ts:11:16
+6:29:34 PM:     11   templateUrl: './criar-festa.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component CriarFestaPage.
+6:29:34 PM: src/app/home/criar-festa/criar-festa.page.html:40:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 40         <ion-router-link href="/home/meu-perfil" class="color">Meu Perfil</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/criar-festa/criar-festa.page.ts:11:16
+6:29:34 PM:     11   templateUrl: './criar-festa.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component CriarFestaPage.
+6:29:34 PM: src/app/home/criar-festa/criar-festa.page.html:44:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 44         <ion-router-link href="/home/lista-de-amigos" class="color">Lista de amigos</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/criar-festa/criar-festa.page.ts:11:16
+6:29:34 PM:     11   templateUrl: './criar-festa.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component CriarFestaPage.
+6:29:34 PM: src/app/home/criar-festa/criar-festa.page.html:48:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 48         <ion-router-link href="/login" class="color">Logout</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/criar-festa/criar-festa.page.ts:11:16
+6:29:34 PM:     11   templateUrl: './criar-festa.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component CriarFestaPage.
+6:29:34 PM: src/app/home/meu-perfil/meu-perfil.page.html:4:7 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 4       <ion-router-link href="/home/meu-perfil" class="color">
+6:29:34 PM:         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meu-perfil/meu-perfil.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meu-perfil.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeuPerfilPage.
+6:29:34 PM: src/app/home/meu-perfil/meu-perfil.page.html:28:11 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 28           <ion-router-link href="/home" class="color">Home</ion-router-link>
+6:29:34 PM:              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meu-perfil/meu-perfil.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meu-perfil.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeuPerfilPage.
+6:29:34 PM: src/app/home/meu-perfil/meu-perfil.page.html:32:11 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 32           <ion-router-link href="/home/meus-eventos" class="color">Meus eventos</ion-router-link>
+6:29:34 PM:              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meu-perfil/meu-perfil.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meu-perfil.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeuPerfilPage.
+6:29:34 PM: src/app/home/meu-perfil/meu-perfil.page.html:36:11 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 36           <ion-router-link href="/home/criar-festa" class="color">Criar Festa</ion-router-link>
+6:29:34 PM:              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meu-perfil/meu-perfil.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meu-perfil.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeuPerfilPage.
+6:29:34 PM: src/app/home/meu-perfil/meu-perfil.page.html:40:11 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 40           <ion-router-link href="/home/parceiros" class="color">Parceiros</ion-router-link>
+6:29:34 PM:              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meu-perfil/meu-perfil.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meu-perfil.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeuPerfilPage.
+6:29:34 PM: src/app/home/meu-perfil/meu-perfil.page.html:44:11 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 44           <ion-router-link href="/home/lista-de-amigos" class="color">Lista de amigos</ion-router-link>
+6:29:34 PM:              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meu-perfil/meu-perfil.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meu-perfil.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeuPerfilPage.
+6:29:34 PM: src/app/home/meu-perfil/meu-perfil.page.html:48:11 - error NG8001: m'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 48           <ion-router-link href="/login" class="color">Logout</ion-router-link>
+6:29:34 PM:              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meu-perfil/meu-perfil.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meu-perfil.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeuPerfilPage.
+6:29:34 PM: src/app/home/meu-perfil/meu-perfil.page.html:68:5 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 68     <ion-router-link href="/home/lista-de-amigos" class="color">Amigos</ion-router-link>
+6:29:34 PM:        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meu-perfil/meu-perfil.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meu-perfil.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeuPerfilPage.
+6:29:34 PM: src/app/home/meu-perfil/meu-perfil.page.html:71:5 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 71     <ion-router-link href="/home/meus-eventos" class="color">Festas</ion-router-link>
+6:29:34 PM:        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meu-perfil/meu-perfil.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meu-perfil.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeuPerfilPage.
+6:29:34 PM: src/app/home/meus-eventos/meus-eventos.page.html:4:7 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 4       <ion-router-link href="/home/meu-perfil" class="color">
+6:29:34 PM:         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meus-eventos/meus-eventos.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meus-eventos.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeusEventosPage.
+6:29:34 PM: src/app/home/meus-eventos/meus-eventos.page.html:29:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 29         <ion-router-link href="/home" class="color">Home</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meus-eventos/meus-eventos.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meus-eventos.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeusEventosPage.
+6:29:34 PM: src/app/home/meus-eventos/meus-eventos.page.html:33:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 33         <ion-router-link href="/home/criar-festa" class="color">Criar Festa</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meus-eventos/meus-eventos.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meus-eventos.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeusEventosPage.
+6:29:34 PM: src/app/home/meus-eventos/meus-eventos.page.html:37:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 37         <ion-router-link href="/home/parceiros" class="color">Parceiros</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meus-eventos/meus-eventos.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meus-eventos.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeusEventosPage.
+6:29:34 PM: src/app/home/meus-eventos/meus-eventos.page.html:41:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 41         <ion-router-link href="/home/meu-perfil" class="color">Meu Perfil</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meus-eventos/meus-eventos.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meus-eventos.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeusEventosPage.
+6:29:34 PM: src/app/home/meus-eventos/meus-eventos.page.html:45:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 45         <ion-router-link href="/home/lista-de-amigos" class="color">Lista de amigos</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meus-eventos/meus-eventos.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meus-eventos.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeusEventosPage.
+6:29:34 PM: src/app/home/meus-eventos/meus-eventos.page.html:49:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 49         <ion-router-link href="/login" class="color">Logout</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meus-eventos/meus-eventos.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meus-eventos.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeusEventosPage.
+6:29:34 PM: src/app/home/meus-eventos/meus-eventos.page.html:63:7 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 63       <ion-router-link href="/home/evento-ativo" class="color">Ver Evento</ion-router-link>
+6:29:34 PM:          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/meus-eventos/meus-eventos.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './meus-eventos.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component MeusEventosPage.
+6:29:34 PM: src/app/home/evento-ativo/evento-ativo.page.html:5:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 5         <ion-router-link href="/home/meu-perfil" class="color">
+6:29:34 PM:           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/evento-ativo/evento-ativo.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './evento-ativo.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component EventoAtivoPage.
+6:29:34 PM: src/app/home/evento-ativo/evento-ativo.page.html:32:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 32         <ion-router-link href="/home" class="color">Home </ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/evento-ativo/evento-ativo.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './evento-ativo.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component EventoAtivoPage.
+6:29:34 PM: src/app/home/evento-ativo/evento-ativo.page.html:36:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 36         <ion-router-link href="/home/meus-eventos" class="color">Meus eventos</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/evento-ativo/evento-ativo.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './evento-ativo.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component EventoAtivoPage.
+6:29:34 PM: src/app/home/evento-ativo/evento-ativo.page.html:40:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 40         <ion-router-link href="/home/criar-festa" class="color">Criar Festa</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/evento-ativo/evento-ativo.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './evento-ativo.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component EventoAtivoPage.
+6:29:34 PM: src/app/home/evento-ativo/evento-ativo.page.html:44:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 44         <ion-router-link href="/home/parceiros" class="color">Parceiros</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/evento-ativo/evento-ativo.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './evento-ativo.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component EventoAtivoPage.
+6:29:34 PM: src/app/home/evento-ativo/evento-ativo.page.html:48:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 48         <ion-router-link href="/home/meu-perfil" class="color">Meu Perfil</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/evento-ativo/evento-ativo.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './evento-ativo.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component EventoAtivoPage.
+6:29:34 PM: src/app/home/evento-ativo/evento-ativo.page.html:52:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 52         <ion-router-link href="/login" class="color">Logout</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/evento-ativo/evento-ativo.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './evento-ativo.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component EventoAtivoPage.
+6:29:34 PM: src/app/home/evento-ativo/shared/components/item-form/item-form.component.html:4:46 - error TS2339: Property 'name' does not exist on type 'CreatePage'.
+6:29:34 PM: 4     <ion-input type="text" [(ngModel)]="item.name"></ion-input>
+6:29:34 PM:                                                ~~~~
+6:29:34 PM:   src/app/home/evento-ativo/shared/components/item-form/item-form.component.ts:6:16
+6:29:34 PM:     6   templateUrl: './item-form.component.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ItemFormComponent.
+6:29:34 PM: src/app/home/evento-ativo/shared/components/item-form/item-form.component.html:4:46 - error TS2339: Property 'name' does not exist on type 'CreatePage'.
+6:29:34 PM: 4     <ion-input type="text" [(ngModel)]="item.name"></ion-input>
+6:29:34 PM:                                                ~~~~
+6:29:34 PM:   src/app/home/evento-ativo/shared/components/item-form/item-form.component.ts:6:16
+6:29:34 PM:     6   templateUrl: './item-form.component.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ItemFormComponent.
+6:29:34 PM: src/app/home/evento-ativo/shared/components/item-form/item-form.component.html:8:47 - error TS2339: Property 'valor' does not exist on type 'CreatePage'.
+6:29:34 PM: 8     <ion-input type="email" [(ngModel)]="item.valor"></ion-input>
+6:29:34 PM:                                                 ~~~~~
+6:29:34 PM:   src/app/home/evento-ativo/shared/components/item-form/item-form.component.ts:6:16
+6:29:34 PM:     6   templateUrl: './item-form.component.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ItemFormComponent.
+6:29:34 PM: src/app/home/evento-ativo/shared/components/item-form/item-form.component.html:8:47 - error TS2339: Property 'valor' does not exist on type 'CreatePage'.
+6:29:34 PM: 8     <ion-input type="email" [(ngModel)]="item.valor"></ion-input>
+6:29:34 PM:                                                 ~~~~~
+6:29:34 PM:   src/app/home/evento-ativo/shared/components/item-form/item-form.component.ts:6:16
+6:29:34 PM:     6   templateUrl: './item-form.component.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ItemFormComponent.
+6:29:34 PM: src/app/home/evento-ativo/shared/components/item-form/item-form.component.html:12:45 - error TS2339: Property 'quantidade' does not exist on type 'CreatePage'.
+6:29:34 PM: 12     <ion-input type="tel" [(ngModel)]="item.quantidade"></ion-input>
+6:29:34 PM:                                                ~~~~~~~~~~
+6:29:34 PM:   src/app/home/evento-ativo/shared/components/item-form/item-form.component.ts:6:16
+6:29:34 PM:     6   templateUrl: './item-form.component.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ItemFormComponent.
+6:29:34 PM: src/app/home/evento-ativo/shared/components/item-form/item-form.component.html:12:45 - error TS2339: Property 'quantidade' does not exist on type 'CreatePage'.
+6:29:34 PM: 12     <ion-input type="tel" [(ngModel)]="item.quantidade"></ion-input>
+6:29:34 PM:                                                ~~~~~~~~~~
+6:29:34 PM:   src/app/home/evento-ativo/shared/components/item-form/item-form.component.ts:6:16
+6:29:34 PM:     6   templateUrl: './item-form.component.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ItemFormComponent.
+6:29:34 PM: src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.html:4:47 - error TS2339: Property 'username' does not exist on type 'CreatePage'.
+6:29:34 PM: 4     <ion-input type="text" [(ngModel)]="amigo.username"></ion-input>
+6:29:34 PM:                                                 ~~~~~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.ts:6:16
+6:29:34 PM:     6   templateUrl: './amigo-form.component.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component AmigoFormComponent.
+6:29:34 PM: src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.html:4:47 - error TS2339: Property 'username' does not exist on type 'CreatePage'.
+6:29:34 PM: 4     <ion-input type="text" [(ngModel)]="amigo.username"></ion-input>
+6:29:34 PM:                                                 ~~~~~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.ts:6:16
+6:29:34 PM:     6   templateUrl: './amigo-form.component.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component AmigoFormComponent.
+6:29:34 PM: src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.html:8:47 - error TS2339: Property 'name' does not exist on type 'CreatePage'.
+6:29:34 PM: 8     <ion-input type="text" [(ngModel)]="amigo.name"></ion-input>
+6:29:34 PM:                                                 ~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.ts:6:16
+6:29:34 PM:     6   templateUrl: './amigo-form.component.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component AmigoFormComponent.
+6:29:34 PM: src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.html:8:47 - error TS2339: Property 'name' does not exist on type 'CreatePage'.
+6:29:34 PM: 8     <ion-input type="text" [(ngModel)]="amigo.name"></ion-input>
+6:29:34 PM:                                                 ~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.ts:6:16
+6:29:34 PM:     6   templateUrl: './amigo-form.component.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component AmigoFormComponent.
+6:29:34 PM: src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.html:12:48 - error TS2339: Property 'email' does not exist on type 'CreatePage'.
+6:29:34 PM: 12     <ion-input type="email" [(ngModel)]="amigo.email"></ion-input>
+6:29:34 PM:                                                   ~~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.ts:6:16
+6:29:34 PM:     6   templateUrl: './amigo-form.component.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component AmigoFormComponent.
+6:29:34 PM: src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.html:12:48 - error TS2339: Property 'email' does not exist on type 'CreatePage'.
+6:29:34 PM: 12     <ion-input type="email" [(ngModel)]="amigo.email"></ion-input>
+6:29:34 PM:                                                   ~~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.ts:6:16
+6:29:34 PM:     6   templateUrl: './amigo-form.component.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component AmigoFormComponent.
+6:29:34 PM: src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.html:16:46 - error TS2339: Property 'phone' does not exist on type 'CreatePage'.
+6:29:34 PM: 16     <ion-input type="tel" [(ngModel)]="amigo.phone"></ion-input>
+6:29:34 PM:                                                 ~~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.ts:6:16
+6:29:34 PM:     6   templateUrl: './amigo-form.component.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component AmigoFormComponent.
+6:29:34 PM: src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.html:16:46 - error TS2339: Property 'phone' does not exist on type 'CreatePage'.
+6:29:34 PM: 16     <ion-input type="tel" [(ngModel)]="amigo.phone"></ion-input>
+6:29:34 PM:                                                 ~~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/shared/components/amigo-form/amigo-form.component.ts:6:16
+6:29:34 PM:     6   templateUrl: './amigo-form.component.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component AmigoFormComponent.
+6:29:34 PM: src/app/home/parceiros/parceiros.page.html:6:11 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 6           <ion-router-link href="/home/meu-perfil">
+6:29:34 PM:             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/parceiros/parceiros.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './parceiros.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ParceirosPage.
+6:29:34 PM: src/app/home/parceiros/parceiros.page.html:31:11 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 31           <ion-router-link href="/home" class="color">Home</ion-router-link>
+6:29:34 PM:              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/parceiros/parceiros.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './parceiros.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ParceirosPage.
+6:29:34 PM: src/app/home/parceiros/parceiros.page.html:35:11 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 35           <ion-router-link href="/home/meus-eventos" class="color">Meus eventos</ion-router-link>
+6:29:34 PM:              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/parceiros/parceiros.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './parceiros.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ParceirosPage.
+6:29:34 PM: src/app/home/parceiros/parceiros.page.html:39:11 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 39           <ion-router-link href="/home/criar-festa" class="color">Criar Festa</ion-router-link>
+6:29:34 PM:              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/parceiros/parceiros.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './parceiros.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ParceirosPage.
+6:29:34 PM: src/app/home/parceiros/parceiros.page.html:43:11 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 43           <ion-router-link href="/home/meu-perfil" class="color">Meu Perfil</ion-router-link>
+6:29:34 PM:              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/parceiros/parceiros.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './parceiros.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ParceirosPage.
+6:29:34 PM: src/app/home/parceiros/parceiros.page.html:47:11 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 47           <ion-router-link href="/home/lista-de-amigos" class="color">Lista de amigos</ion-router-link>
+6:29:34 PM:              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/parceiros/parceiros.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './parceiros.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ParceirosPage.
+6:29:34 PM: src/app/home/parceiros/parceiros.page.html:51:11 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 51           <ion-router-link href="/login" class="color">Logout</ion-router-link>
+6:29:34 PM:              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/parceiros/parceiros.page.ts:5:16
+6:29:34 PM:     5   templateUrl: './parceiros.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ParceirosPage.
+6:29:34 PM: src/app/home/lista-de-amigos/lista-de-amigos.page.html:5:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 5         <ion-router-link href="/home/meu-perfil" class="color">
+6:29:34 PM:           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/lista-de-amigos.page.ts:10:16
+6:29:34 PM:     10   templateUrl: './lista-de-amigos.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ListaDeAmigosPage.
+6:29:34 PM: src/app/home/lista-de-amigos/lista-de-amigos.page.html:33:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 33         <ion-router-link href="/home" class="color">Home </ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/lista-de-amigos.page.ts:10:16
+6:29:34 PM:     10   templateUrl: './lista-de-amigos.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ListaDeAmigosPage.
+6:29:34 PM: src/app/home/lista-de-amigos/lista-de-amigos.page.html:37:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 37         <ion-router-link href="/home/meus-eventos" class="color">Meus eventos</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/lista-de-amigos.page.ts:10:16
+6:29:34 PM:     10   templateUrl: './lista-de-amigos.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ListaDeAmigosPage.
+6:29:34 PM: src/app/home/lista-de-amigos/lista-de-amigos.page.html:41:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 41         <ion-router-link href="/home/criar-festa" class="color">Criar Festa</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/lista-de-amigos.page.ts:10:16
+6:29:34 PM:     10   templateUrl: './lista-de-amigos.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ListaDeAmigosPage.
+6:29:34 PM: src/app/home/lista-de-amigos/lista-de-amigos.page.html:45:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 45         <ion-router-link href="/home/parceiros" class="color">Parceiros</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/lista-de-amigos.page.ts:10:16
+6:29:34 PM:     10   templateUrl: './lista-de-amigos.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ListaDeAmigosPage.
+6:29:34 PM: src/app/home/lista-de-amigos/lista-de-amigos.page.html:49:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 49         <ion-router-link href="/home/meu-perfil" class="color">Meu Perfil</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/lista-de-amigos.page.ts:10:16
+6:29:34 PM:     10   templateUrl: './lista-de-amigos.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ListaDeAmigosPage.
+6:29:34 PM: src/app/home/lista-de-amigos/lista-de-amigos.page.html:53:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 53         <ion-router-link href="/login" class="color">Logout</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/lista-de-amigos.page.ts:10:16
+6:29:34 PM:     10   templateUrl: './lista-de-amigos.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component ListaDeAmigosPage.
+6:29:34 PM: src/app/home/lista-de-amigos/edit/edit.page.html:11:28 - error TS2339: Property 'emptyAmigo' does not exist on type 'EditPage'.
+6:29:34 PM: 11   <app-amigo-form [amigo]="emptyAmigo" (save)="handleSave()"></app-amigo-form>
+6:29:34 PM:                               ~~~~~~~~~~
+6:29:34 PM:   src/app/home/lista-de-amigos/edit/edit.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './edit.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component EditPage.
+6:29:34 PM: src/app/home/pagamento/pagamento.page.html:6:13 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 6             <ion-router-link href="/home/meu-perfil" class="color">
+6:29:34 PM:               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/pagamento/pagamento.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './pagamento.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component PagamentoPage.
+6:29:34 PM: src/app/home/pagamento/pagamento.page.html:30:13 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 30             <ion-router-link href="/home" class="color">Home</ion-router-link>
+6:29:34 PM:                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/pagamento/pagamento.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './pagamento.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component PagamentoPage.
+6:29:34 PM: src/app/home/pagamento/pagamento.page.html:34:13 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 34             <ion-router-link href="/home/meus-eventos" class="color">Meus eventos</ion-router-link>
+6:29:34 PM:                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/pagamento/pagamento.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './pagamento.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component PagamentoPage.
+6:29:34 PM: src/app/home/pagamento/pagamento.page.html:38:13 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 38             <ion-router-link href="/home/parceiros" class="color">Parceiros</ion-router-link>
+6:29:34 PM:                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/pagamento/pagamento.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './pagamento.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component PagamentoPage.
+6:29:34 PM: src/app/home/pagamento/pagamento.page.html:42:13 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 42             <ion-router-link href="/home/meu-perfil" class="color">Meu Perfil</ion-router-link>
+6:29:34 PM:                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/pagamento/pagamento.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './pagamento.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component PagamentoPage.
+6:29:34 PM: src/app/home/pagamento/pagamento.page.html:46:13 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 46             <ion-router-link href="/home/lista-de-amigos" class="color">Lista de amigos</ion-router-link>
+6:29:34 PM:                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/pagamento/pagamento.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './pagamento.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component PagamentoPage.
+6:29:34 PM: src/app/home/pagamento/pagamento.page.html:50:13 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 50             <ion-router-link href="/login" class="color">Logout</ion-router-link>
+6:29:34 PM:                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/pagamento/pagamento.page.ts:8:16
+6:29:34 PM:     8   templateUrl: './pagamento.page.html',
+6:29:34 PM:                      ~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component PagamentoPage.
+6:29:34 PM: src/app/home/cidades/cidades.page.html:4:7 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 4       <ion-router-link href="/home/meu-perfil" class="color">
+6:29:34 PM:         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/cidades/cidades.page.ts:13:16
+6:29:34 PM:     13   templateUrl: './cidades.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component CidadesPage.
+6:29:34 PM: src/app/home/cidades/cidades.page.html:28:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 28         <ion-router-link href="/home" class="color">Home</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/cidades/cidades.page.ts:13:16
+6:29:34 PM:     13   templateUrl: './cidades.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component CidadesPage.
+6:29:34 PM: src/app/home/cidades/cidades.page.html:32:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 32         <ion-router-link href="/home/meus-eventos" class="color">Meus eventos</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/cidades/cidades.page.ts:13:16
+6:29:34 PM:     13   templateUrl: './cidades.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component CidadesPage.
+6:29:34 PM: src/app/home/cidades/cidades.page.html:36:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 36         <ion-router-link href="/home/parceiros" class="color">Parceiros</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/cidades/cidades.page.ts:13:16
+6:29:34 PM:     13   templateUrl: './cidades.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component CidadesPage.
+6:29:34 PM: src/app/home/cidades/cidades.page.html:40:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 40         <ion-router-link href="/home/meu-perfil" class="color">Meu Perfil</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/cidades/cidades.page.ts:13:16
+6:29:34 PM:     13   templateUrl: './cidades.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component CidadesPage.
+6:29:34 PM: src/app/home/cidades/cidades.page.html:44:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 44         <ion-router-link href="/home/lista-de-amigos" class="color">Lista de amigos</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/cidades/cidades.page.ts:13:16
+6:29:34 PM:     13   templateUrl: './cidades.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component CidadesPage.
+6:29:34 PM: src/app/home/cidades/cidades.page.html:48:9 - error NG8001: 'ion-router-link' is not a known element:
+6:29:34 PM: 1. If 'ion-router-link' is an Angular component, then verify that it is part of this module.
+6:29:34 PM: 2. If 'ion-router-link' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+6:29:34 PM: 48         <ion-router-link href="/login" class="color">Logout</ion-router-link>
+6:29:34 PM:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:   src/app/home/cidades/cidades.page.ts:13:16
+6:29:34 PM:     13   templateUrl: './cidades.page.html',
+6:29:34 PM:                       ~~~~~~~~~~~~~~~~~~~~~
+6:29:34 PM:     Error occurs in the template of component CidadesPage.
+6:29:34 PM: [ERROR] An error occurred while running subprocess ng.
+6:29:34 PM:         ng run app:build:production exited with exit code 1.
+6:29:34 PM:         Re-running this command with the --verbose flag may provide more information.
+6:29:35 PM: ​
+6:29:35 PM: ────────────────────────────────────────────────────────────────
+6:29:35 PM:   "build.command" failed                                        
+6:29:35 PM: ────────────────────────────────────────────────────────────────
+6:29:35 PM: ​
+6:29:35 PM:   Error message
+6:29:35 PM:   Command failed with exit code 1: npx ionic build --prod --enableLint false
+6:29:35 PM: ​
+6:29:35 PM:   Error location
+6:29:35 PM:   In Build command from Netlify app:
+6:29:35 PM:   npx ionic build --prod --enableLint false
+6:29:35 PM: ​
+6:29:35 PM:   Resolved config
+6:29:35 PM:   build:
+6:29:35 PM:     base: /opt/build/repo/Project-mobile
+6:29:35 PM:     command: npx ionic build --prod --enableLint false
+6:29:35 PM:     commandOrigin: ui
+6:29:35 PM: Caching artifacts
+6:29:35 PM: Started saving node modules
+6:29:35 PM: Finished saving node modules
+6:29:35 PM: Started saving build plugins
+6:29:35 PM: Finished saving build plugins
+6:29:35 PM: Started saving pip cache
+6:29:36 PM: Finished saving pip cache
+6:29:36 PM: Started saving emacs cask dependencies
+6:29:36 PM: Finished saving emacs cask dependencies
+6:29:36 PM: Started saving maven dependencies
+6:29:36 PM: Finished saving maven dependencies
+6:29:36 PM: Started saving boot dependencies
+6:29:36 PM: Finished saving boot dependencies
+6:29:36 PM: Started saving go dependencies
+6:29:36 PM: Finished saving go dependencies
+6:29:39 PM: Build failed due to a user error: Build script returned non-zero exit code: 2
+6:29:39 PM: Failing build: Failed to build site
+6:29:39 PM: Failed during stage 'building site': Build script returned non-zero exit code: 2
+6:29:39 PM: Finished processing build request in 2m38.835835517s
