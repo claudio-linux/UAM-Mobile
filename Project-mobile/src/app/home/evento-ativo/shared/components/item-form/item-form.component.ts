@@ -8,7 +8,7 @@ import { CreatePage } from '../../../create/create.page';
 })
 export class ItemFormComponent implements OnInit {
 
-  @Input() item: CreatePage;
+  @Input() item = CreatePage;
   @Output() save = new EventEmitter();
 
   constructor() { }
