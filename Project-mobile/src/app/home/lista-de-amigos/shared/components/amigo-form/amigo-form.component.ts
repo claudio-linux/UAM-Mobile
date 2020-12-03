@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CreatePage } from '../../../create/create.page';
 
 
@@ -7,7 +7,7 @@ import { CreatePage } from '../../../create/create.page';
   templateUrl: './amigo-form.component.html',
   styleUrls: ['./amigo-form.component.scss'],
 })
-export class AmigoFormComponent implements OnInit {
+export class AmigoFormComponent  {
 
   @Input() amigo = CreatePage;
   @Output() save = new EventEmitter();
