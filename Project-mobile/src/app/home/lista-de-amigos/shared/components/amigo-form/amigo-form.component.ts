@@ -1,6 +1,9 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CreatePage } from '../../../create/create.page';
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/teste
 
 @Component({
   selector: 'app-amigo-form',
@@ -9,7 +12,11 @@ import { CreatePage } from '../../../create/create.page';
 })
 export class AmigoFormComponent implements OnInit {
 
+<<<<<<< HEAD
   @Input() amigo = CreatePage;
+=======
+  @Input() amigo: CreatePage;
+>>>>>>> origin/teste
   @Output() save = new EventEmitter();
 
   constructor() { }
