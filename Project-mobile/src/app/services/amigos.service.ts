@@ -2,18 +2,12 @@ import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 
 export interface Amigo {
-<<<<<<< HEAD
   id: number;
-=======
->>>>>>> origin/teste
   name: string;
   username: string;
   email: string;
   phone: string;
-<<<<<<< HEAD
-  
-=======
->>>>>>> origin/teste
+
 }
 
 @Injectable({
@@ -46,7 +40,7 @@ export class AmigosService {
     this.contacts[idx] = { ...contact };
     this.storage.set('contacts', this.contacts);
   }
-<<<<<<< HEAD
+
 
   //////////////////////
 ////////////
@@ -89,6 +83,3 @@ export class AmigosService {
 }
 
 
-=======
-}
->>>>>>> origin/teste

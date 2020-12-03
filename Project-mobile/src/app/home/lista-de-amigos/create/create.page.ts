@@ -10,11 +10,8 @@ import { Amigo, AmigosService  } from '../../../services/amigos.service';
 export class CreatePage {
 
   public emptyContact: Amigo = {
-<<<<<<< HEAD
     id: null,
     username: '',
-=======
->>>>>>> origin/teste
     name: '',
     email: '',
     phone: ''

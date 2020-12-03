@@ -2,11 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { ModalonePage } from '../modalone/modalone.page';
 import { AmigoDetailsComponent } from './amigo-details/amigo-details.component';
-<<<<<<< HEAD
+
 import { Amigo, AmigosService  } from '../../services/amigos.service';
-=======
-import { AmigosService  } from '../../services/amigos.service';
->>>>>>> origin/teste
 
 
 @Component({
