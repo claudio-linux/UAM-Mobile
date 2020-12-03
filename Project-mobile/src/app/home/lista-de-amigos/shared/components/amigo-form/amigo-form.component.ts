@@ -8,7 +8,7 @@ import { CreatePage } from '../../../create/create.page';
 })
 export class AmigoFormComponent implements OnInit {
 
-  @Input() amigo: CreatePage;
+  @Input() amigo = CreatePage;
   @Output() save = new EventEmitter();
 
   constructor() { }
